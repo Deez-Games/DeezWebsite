@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../scss/Slideshow.module.scss";
 
 type Props = {
@@ -7,13 +7,28 @@ type Props = {
 };
 
 const Slideshow = ({ images, id }: Props) => {
+  const [count, setCount] = useState(0);
+
   return (
     <div className={style.container} id={`Slideshow_${id}`}>
-      {images.map((name: string) => (
-        <img key={name} src={name} alt={name} />
-      ))}
-      <a className={style.changePhoto}>&#10094;</a>
-      <a className={style.changePhoto}>&#10095;</a>
+      <button
+        className={`${style.changePhoto} ${style.left}`}
+        onClick={() => setCount((prevState) => prevState + 1)}
+      >
+        &#10094;
+      </button>
+      <div className={style.images}>
+        <img
+          src={images[Math.abs(count % images.length)]}
+          alt={images[Math.abs(count % images.length)]}
+        />
+      </div>
+      <button
+        className={`${style.changePhoto} ${style.right}`}
+        onClick={() => setCount((prevState) => prevState - 1)}
+      >
+        &#10095;
+      </button>
     </div>
   );
 };

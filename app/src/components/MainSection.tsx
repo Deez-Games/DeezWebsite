@@ -19,8 +19,8 @@ const MainSection = () => {
       <AboutUs />
       <AboutUs />
       <Slideshow images={bgcImages} id={"bgcImages"} />
-      {/*<AboutUs />*/}
-      {/*<AboutUs />*/}
+      <AboutUs />
+      <AboutUs />
     </div>
   );
 };
