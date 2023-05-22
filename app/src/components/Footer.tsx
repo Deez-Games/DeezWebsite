@@ -1,10 +1,9 @@
 import React from "react";
-import style from "../scss/Footer.module.scss";
 
 const Footer = () => {
   return (
-    <div className={style.container}>
-      <div className={style.content}>stoopki 🥰😍</div>
+    <div className="flex justify-center w-full bg-[#18293a] py-5">
+      <div className="w-[90%]">stoopki 🥰😍</div>
     </div>
   );
 };
