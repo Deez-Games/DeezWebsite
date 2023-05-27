@@ -1,6 +1,5 @@
 import React from "react";
 import AboutUs from "./Main Section/AboutUs";
-import style from "../scss/MainSection.module.scss";
 import Slideshow from "../features/Slideshow";
 import "../index.css";
 import { FaBeer } from "react-icons/fa";
@@ -17,7 +16,7 @@ const MainSection = () => {
   ];
 
   return (
-    <div className={style.container}>
+    <div className="grid gap-5 w-[90%] py-8">
       <h1>
         Hello world! <FaBeer />
       </h1>
