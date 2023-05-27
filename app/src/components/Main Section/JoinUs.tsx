@@ -1,13 +1,10 @@
 import React from "react";
 
-const AboutUs = () => {
+const JoinUs = () => {
   return (
-    <div id="AboutUs" className="h-full flex items-center justify-between">
-      <div className="w-[48%] shadow-imageShadow">
-        <img src="/business-meeting.jpg" alt="About us image" />
-      </div>
+    <div id="JoinUs" className="h-full flex items-center justify-between">
       <div className="w-[48%]">
-        <h2 className="text-8xl">ABOUT US</h2>
+        <h2 className="text-8xl">JOIN US</h2>
         <br />
         <p className="text-lg">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam
@@ -25,8 +22,11 @@ const AboutUs = () => {
           perspiciatis repellendus rerum sit temporibus.
         </p>
       </div>
+      <div className="w-[48%]">
+        <img src="/business-meeting.jpg" alt="About us image" />
+      </div>
     </div>
   );
 };
 
-export default AboutUs;
+export default JoinUs;
