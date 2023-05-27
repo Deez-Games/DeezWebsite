@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import Button from "@/components/Button";
 
 const JoinUs = () => {
   return (
@@ -22,8 +24,13 @@ const JoinUs = () => {
           perspiciatis repellendus rerum sit temporibus.
         </p>
       </div>
-      <div className="w-[48%]">
-        <img src="/business-meeting.jpg" alt="About us image" />
+      <div className="w-[48%] flex flex-col items-center">
+        <img
+          src="/business-meeting.jpg"
+          alt="About us image"
+          className="mb-10"
+        />
+        <Button text="Find Out" />
       </div>
     </div>
   );

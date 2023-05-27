@@ -3,6 +3,7 @@ import AboutUs from "./Main Section/AboutUs";
 import Slide from "@/components/Slide";
 import JoinUs from "@/components/main section/JoinUs";
 import GamesTiles from "@/components/main section/GamesTiles";
+import Investors from "@/components/main section/Investors";
 
 const MainSection = () => {
   return (
@@ -17,7 +18,7 @@ const MainSection = () => {
         <AboutUs />
       </Slide>
       <Slide>
-        <AboutUs />
+        <Investors />
       </Slide>
     </div>
   );
