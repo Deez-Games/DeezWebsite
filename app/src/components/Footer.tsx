@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex justify-center flex-col items-center w-full py-5 py-[3em]">
+    <div className="flex justify-center flex-col items-center w-full h-[50vh] py-5 py-[3em]">
       <div className="flex text-5xl justify-around w-[80%]">
         <BsYoutube />
         <BsTwitter />

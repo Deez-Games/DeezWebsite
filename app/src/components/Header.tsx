@@ -18,13 +18,13 @@ const Header = () => {
             ABOUT
           </a>
           <a
-            href="#Slideshow_bgcImages"
+            href="#Contact"
             className="no-underline text- text-gray-100 hover:text-[#c8cad2]"
           >
             CONTACT
           </a>
           <a
-            href="#Slideshow_bgcImages"
+            href="#Investors"
             className="no-underline text- text-gray-100 hover:text-[#c8cad2]"
           >
             INVESTORS

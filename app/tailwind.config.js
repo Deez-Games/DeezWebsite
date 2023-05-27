@@ -15,6 +15,9 @@ module.exports = {
       boxShadow: {
         imageShadow: "16px 16px 0px 0px rgb(91, 13, 218)",
       },
+      gridTemplateColumns: {
+        newsLetter: "2fr 2fr 1fr",
+      },
     },
   },
   plugins: [],
