@@ -3,7 +3,7 @@ import React from "react";
 const AboutUs = () => {
   return (
     <div id="AboutUs" className="h-full flex items-center justify-between">
-      <div className="w-[48%] shadow-imageShadow">
+      <div className="w-[48%] shadow-[16px_16px_0px_0px] shadow-violet">
         <img src="/business-meeting.jpg" alt="About us image" />
       </div>
       <div className="w-[48%]">

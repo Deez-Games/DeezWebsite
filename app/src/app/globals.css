@@ -13,3 +13,19 @@ html {
     scroll-behavior: smooth;
     /*scroll-padding-top: 64px;*/
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #292929;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(91, 13, 218, 0.7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(91, 13, 218, 0.9);
+}

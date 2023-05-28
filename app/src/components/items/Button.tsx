@@ -3,7 +3,7 @@ import React from "react";
 const Button = ({ text, handleClick }) => {
   return (
     <button
-      className="bg-[#5B0DDA] py-4 px-10 font-bold text-2xl"
+      className="bg-violet py-4 px-10 font-bold text-2xl"
       onClick={handleClick}
     >
       {text}

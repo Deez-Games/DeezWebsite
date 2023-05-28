@@ -1,11 +1,10 @@
 import React from "react";
-import Button from "@/components/Button";
+import Button from "@/components/items/Button";
 
 const NewsLetter = () => {
-  //grid grid-cols-3 gap-x-10
   return (
     <div id="Contact" className="h-[50vh] flex justify-center items-center">
-      <div className="w-[80%] grid grid-cols-newsLetter gap-x-10">
+      <div className="w-[80%] grid gap-x-10">
         <h3 className="text-3xl font-bold flex items-center">
           Subscribe to newsletter!
         </h3>
