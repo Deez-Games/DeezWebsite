@@ -7,7 +7,7 @@ const AboutUs = () => {
         <img src="/business-meeting.jpg" alt="About us image" />
       </div>
       <div className="w-[48%]">
-        <h2 className="text-8xl">ABOUT US</h2>
+        <h2 className="text-[7vw]">ABOUT US</h2>
         <br />
         <p className="text-lg">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam

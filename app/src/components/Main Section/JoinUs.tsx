@@ -6,7 +6,7 @@ const JoinUs = () => {
   return (
     <div id="JoinUs" className="h-full flex items-center justify-between">
       <div className="w-[48%]">
-        <h2 className="text-8xl">JOIN US</h2>
+        <h2 className="text-[8vw]">JOIN US</h2>
         <br />
         <p className="text-lg">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam
