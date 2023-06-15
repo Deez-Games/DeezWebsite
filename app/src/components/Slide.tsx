@@ -1,6 +1,7 @@
 import React from "react";
 
-const Slide = ({ children }) => {
+// TODO: type any
+const Slide = ({ children }:any) => {
   return <div className="w-full h-screen snap-start">{children}</div>;
 };
 

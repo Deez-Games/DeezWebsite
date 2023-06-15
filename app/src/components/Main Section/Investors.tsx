@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@/components/items/Button";
+import Link from "next/link";
 
 const Investors = () => {
   return (
@@ -7,23 +8,20 @@ const Investors = () => {
       id="Investors"
       className="h-full flex flex-col items-center justify-center"
     >
-      <div className="h-[50%] flex flex-col items-center justify-between">
-        <h2 className="text-[5vw]">INTERESTED IN PARTNERSHIP?</h2>
-        <div className="flex h-[70%]">
-          <div className="flex flex-col justify-between items-center text-center px-14 py-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi
-            asperiores assumenda consequatur cumque hic incidunt ipsa ipsum
-            laudantium nemo, non ratione repudiandae vero voluptates.
-            <Button text="I'm an Investor" />
+      <div className="h-full flex flex-col items-center p-10">
+        <h2 className="text-7xl tracking-wider pt-10 pb-20 font-bold [text-shadow:_0px_0px_10px_rgba(255,_255,_255,_1);]">BECOME OUR PARTNER</h2>
+        <div className="flex gap-x-20 p-20">
+          <div className="flex flex-col p-10 bg-white text-2xl text-black rounded-lg">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt doloremque voluptate repellendus, officiis hic quod nulla quasi consectetur asperiores aut in veniam nam ab ratione corrupti animi error, accusamus veritatis esse. Voluptatem esse, nisi atque cum ipsam dicta molestias ab exercitationem eius illum ea voluptates itaque delectus maiores eveniet omnis velit at.
+            </p>
+            <Link href="/" className="w-64 text-white bg-primary-button rounded-full mt-10 tracking-wider p-5 text-center">I am investor</Link>
           </div>
-
-          <div className="border-l-2 border-gray-500"></div>
-
-          <div className="flex flex-col justify-between items-center text-center px-14 py-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut,
-            blanditiis ducimus eaque error eum, excepturi illum in iure minima
-            officiis quae quos ullam voluptates.
-            <Button text="I'm a Partner" />
+          <div className="flex flex-col p-10 bg-white text-2xl text-black rounded-lg">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt doloremque voluptate repellendus, officiis hic quod nulla quasi consectetur asperiores aut in veniam nam ab ratione corrupti animi error, accusamus veritatis esse. Voluptatem esse, nisi atque cum ipsam dicta molestias ab exercitationem eius illum ea voluptates itaque delectus maiores eveniet omnis velit at.
+            </p>
+            <Link href="/" className="w-64 text-white bg-primary-button rounded-full mt-10 tracking-wider p-5 text-center">I am partner</Link>
           </div>
         </div>
       </div>

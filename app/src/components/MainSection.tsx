@@ -1,13 +1,13 @@
 import React from "react";
 import AboutUs from "./Main Section/AboutUs";
 import Slide from "@/components/Slide";
-import JoinUs from "@/components/main section/JoinUs";
-import GamesTiles from "@/components/main section/GamesTiles";
-import Investors from "@/components/main section/Investors";
+import JoinUs from "@/components/Main Section/JoinUs";
+import GamesTiles from "@/components/Main Section/GamesTiles";
+import Investors from "@/components/Main Section/Investors";
 
 const MainSection = () => {
   return (
-    <div className="grid gap-5 w-[80%] py-8">
+    <div className="grid">
       <Slide>
         <GamesTiles />
       </Slide>
