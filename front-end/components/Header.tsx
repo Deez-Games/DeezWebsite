@@ -32,7 +32,10 @@ const Header = () => {
         </div>
       </div>
     </div> */
-    <div className="w-16 h-16 bg-violet">super programowanie</div>
+    <div className="w-16 h-16 bg-violet underline">
+      super programowanie{" "}
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </div>
   );
 };
 
