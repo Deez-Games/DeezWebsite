@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "@/components/items/Button";
 import Link from "next/link";
 
 const Investors = () => {
@@ -8,12 +7,12 @@ const Investors = () => {
       id="Investors"
       className="h-full flex flex-col items-center justify-center"
     >
-      <div className="h-full flex flex-col items-center p-10">
+      <div className="h-full flex flex-col items-center justify-center p-10">
         <h2 className="text-7xl tracking-wider pt-10 pb-10 font-bold [text-shadow:_0px_0px_10px_rgba(255,_255,_255,_1);]">
           BECOME OUR PARTNER
         </h2>
         <div className="flex gap-x-20 p-10">
-          <div className="flex flex-col p-10 bg-white text-2xl text-black">
+          <div className="flex flex-col p-10 bg-white text-xl text-black">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
               doloremque voluptate repellendus, officiis hic quod nulla quasi
@@ -26,7 +25,7 @@ const Investors = () => {
               <Link href="/">I am investor</Link>
             </span>
           </div>
-          <div className="flex flex-col p-10 bg-white text-2xl text-black">
+          <div className="flex flex-col p-10 bg-white text-xl text-black">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
               doloremque voluptate repellendus, officiis hic quod nulla quasi

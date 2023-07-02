@@ -39,6 +39,7 @@ a {
   background: rgba(91, 13, 218, 0.9);
 }
 
+/*DARK THEME*/
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
