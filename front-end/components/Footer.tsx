@@ -39,10 +39,10 @@ const Footer = () => {
       <div className="grid grid-cols-3 gap-y-3 gap-x-6">
         <input
           type="text"
-          className="bg-gray-500 py-2 px-4 col-span-2 placeholder:text-white rounded-lg"
+          className="bg-gray-500 py-2 px-4 col-span-2 placeholder:text-white"
           placeholder="e-mail"
         />
-        <button className="bg-primary-button rounded-lg uppercase tracking-wider">
+        <button className="bg-primary-button uppercase tracking-wider">
           Subscribe
         </button>
         <div className="flex items-center col-span-2">

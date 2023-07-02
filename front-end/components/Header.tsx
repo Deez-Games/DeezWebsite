@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    /*<div className="flex justify-center w-full opacity-1 py-5 fixed top-0 z-10">
+    <div className="flex justify-center w-full opacity-1 py-5 fixed top-0 z-10">
       <div className="w-[90%] flex justify-end">
         <div className="flex w-1/3 justify-between">
           <a
@@ -31,10 +31,6 @@ const Header = () => {
           </a>
         </div>
       </div>
-    </div> */
-    <div className="w-16 h-16 bg-violet underline">
-      super programowanie{" "}
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </div>
   );
 };

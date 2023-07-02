@@ -1,9 +1,9 @@
 import React from "react";
-import AboutUs from "./Main Section/AboutUs";
-import Slide from "@/components/Slide";
-import JoinUs from "@/components/Main Section/JoinUs";
-import GamesTiles from "@/components/Main Section/GamesTiles";
-import Investors from "@/components/Main Section/Investors";
+import AboutUs from "./main section/AboutUs";
+import GamesTiles from "./main section/GamesTiles";
+import Slide from "./Slide";
+import JoinUs from "./main section/JoinUs";
+import Investors from "./main section/Investors";
 
 const MainSection = () => {
   return (
