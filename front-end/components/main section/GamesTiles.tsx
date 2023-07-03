@@ -8,7 +8,6 @@ const GamesTiles = () => {
     for(const game of games) {
       
       if (e.target.classList.contains(game.class.substring(1))) {
-        console.log(game.class.substring(1));
         e.target.classList.add("w-8/12");
         if (document.querySelector(game.class)?.classList.contains("brightness-50")) {
           document.querySelector(game.class)?.classList.remove("brightness-50");
