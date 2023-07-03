@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Landing from "../components/main section/Landing";
+import Landing from "../components/sections/Landing";
 import Slide from "../components/Slide";
 import MainSection from "../components/MainSection";
 

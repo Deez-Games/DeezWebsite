@@ -11,12 +11,14 @@ module.exports = {
         lightGrey: "#D9D9D9",
         grey: "#848484",
         darkGrey: "#292929",
-        violet: "#5B0DDA",
-        text: "#ffffff",
-        background: "#16213e",
         "primary-button": "#1a4a7a",
         "secondary-button": "#cdcdf4",
         accent: "#1a1a7a",
+
+        textBright: "#ffffff",
+        violet: "#4700DF",
+        darkBg: "#242431",
+        brightBg: "#DFE1F3",
 
         // 'text': '#ffffff',
         // 'background': '#16213E',
@@ -34,6 +36,8 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         gauntler: "url('/gauntler1.png')",
+        gauntlerTile: "url('/gauntlerGameTile.png')",
+        babushcatsTile: "url('/babushcatsGameTile.png')",
       },
       boxShadow: {
         imageShadow: "16px 16px 0px 0px rgb(91, 13, 218)",
