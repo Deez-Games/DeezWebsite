@@ -55,17 +55,13 @@ const GamesTiles = () => {
         <Link href="/Games">
           <div className="flex flex-col items-center justify-center font-bold cursor-pointer">
             <div>
-              <label className="flex items-end text-7xl">
-                <p className="[text-shadow:_0px_0px_10px_rgba(255,_255,_255,_1);]">
-                  DEEZ <span className="text-3xl pb-1">are</span>
-                </p>
+              <label className="flex items-end text-7xl gap-2">
+                DEEZ <span className="text-3xl pb-1">are</span>
               </label>
             </div>
             <div className="flex justify-start">
-              <label className="flex items-start text-7xl">
-                <p className="[text-shadow:_0px_0px_10px_rgba(255,_255,_255,_1);]">
-                  <span className="text-3xl">our</span> GAMES
-                </p>
+              <label className="flex items-start text-7xl gap-2">
+                <span className="text-3xl">our</span> GAMES
               </label>
             </div>
           </div>

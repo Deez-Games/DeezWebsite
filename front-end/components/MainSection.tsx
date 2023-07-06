@@ -2,8 +2,10 @@ import React from "react";
 import AboutUs from "./sections/AboutUs";
 import GamesTiles from "./sections/GamesTiles";
 import Slide from "./Slide";
-import JoinUs from "./sections/JoinUs";
-import Investors from "./sections/Investors";
+import OurValues from "./sections/OurValues";
+import DrivesUs from "./sections/DrivesUs";
+import NewsLetter from "./sections/NewsLetter";
+import ContactUs from "./sections/ContactUs";
 
 const MainSection = () => {
   return (
@@ -11,15 +13,11 @@ const MainSection = () => {
       <Slide>
         <GamesTiles />
       </Slide>
-      <Slide>
-        <JoinUs />
-      </Slide>
-      <Slide>
-        <AboutUs />
-      </Slide>
-      <Slide>
-        <Investors />
-      </Slide>
+      <AboutUs />
+      <DrivesUs />
+      <OurValues />
+      <ContactUs />
+      <NewsLetter />
     </div>
   );
 };
