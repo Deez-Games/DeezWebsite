@@ -36,6 +36,16 @@ a {
   background: rgba(91, 13, 218, 0.9);
 }
 
+.customGradientVioletRight {
+  background: rgb(36,36,49);
+  background: linear-gradient(135deg, rgba(36,36,49,1) 56%, rgba(71,0,223,1) 56%);
+}
+
+.customGradientVioletLeft {
+  background: rgb(71,0,223);
+  background: linear-gradient(135deg, rgba(71,0,223,1) 44%, rgba(36,36,49,1) 44%);
+}
+
 /*DARK THEME*/
 @media (prefers-color-scheme: dark) {
   html {

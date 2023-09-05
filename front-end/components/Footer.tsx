@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex justify-center flex-col items-center w-full gap-y-10 py-16 bg-gray-900">
+    <div className="flex justify-center flex-col items-center w-full gap-y-10 py-16">
       <h2 className="text-6xl tracking-wider">
         Deez Games <span className="text-xl align-top">&trade;</span>
       </h2>
