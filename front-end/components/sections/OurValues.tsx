@@ -33,7 +33,7 @@ const OurValues = () => {
           <span className="bg-violet text-6xl p-3">
             <BsPeople />
           </span>
-          <h3 className="text-3xl font-bold">TEAMWORK</h3>
+          <h3 className="text-3xl font-bold">FRIENDSHIP</h3>
           <p className="text-center">
             As friends, we know and respect each other well, and we believe that
             is the foundation of good communication and teamwork.
