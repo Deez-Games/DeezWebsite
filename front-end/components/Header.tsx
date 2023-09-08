@@ -17,12 +17,12 @@ const Header = () => {
 
   return (
     <div
-      className={`flex justify-center w-full opacity-1 py-5 fixed top-0 z-10 ${
+      className={`hidden md:block flex justify-center w-full opacity-1 py-5 fixed top-0 z-10 ${
         scrollOnTop ? "" : "bg-darkGrey bg-opacity-60"
       }`}
     >
-      <div className="w-[90%] flex justify-end">
-        <div className="flex w-1/3 justify-between">
+      <div className="w-[95%] flex justify-end">
+        <div className="flex w-1/2 xl:w-1/3 justify-between gap-2">
           <Link href="/">
             <span className="hover:text-textHover font-bold cursor-pointer">
               HOME

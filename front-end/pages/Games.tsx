@@ -5,9 +5,9 @@ import GamesList from "../components/sections/GamesList";
 const Games = () => {
   return (
     <>
-      <GamesList />
+      {/*<GamesList />*/}
 
-      <NewsLetter />
+      {/*<NewsLetter />*/}
     </>
   );
 };
