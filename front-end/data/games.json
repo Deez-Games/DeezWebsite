@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Gauntler",
+    "class": ".gauntler",
+    "description":
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam animi architecto asperiores, assumenda beatae cum dolorum ea est maxime mollitia nesciunt quae quidem quo repellendus, repudiandae sed suscipit veritatis?",
+    "price": "5",
+    "color": "#5B0DDA"
+  },
+  {
+    "title": "Project Plane",
+    "class": ".project-plane",
+    "description":
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam animi architecto asperiores, assumenda beatae cum dolorum ea est maxime mollitia nesciunt quae quidem quo repellendus, repudiandae sed suscipit veritatis?",
+    "price": "10",
+    "color": "#690DFF"
+  },
+  {
+    "title": "Babushcats",
+    "class": ".babushcats",
+    "description":
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam animi architecto asperiores, assumenda beatae cum dolorum ea est maxime mollitia nesciunt quae quidem quo repellendus, repudiandae sed suscipit veritatis?",
+    "price": "20",
+    "color": "#7A28FF"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.3.4",
+    "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "sass": "^1.63.6",
+    "tailwind": "^4.0.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "20.3.3",
+    "@types/react": "^18.2.14",
+    "autoprefixer": "^10.4.15",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.7",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  }
+}
