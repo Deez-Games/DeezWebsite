@@ -10,7 +10,7 @@ const OurValues = () => {
         <span className="text-violet">DEEZ</span>
         {"\u00A0"}ARE OUR{"\u00A0"}VALUES
       </div>
-      <div className="flex flex-wrap justify-center w-full gap-6">
+      <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-6">
         <MotivationCard
           icon={<BsSuitHeartFill />}
           title="PASSION"

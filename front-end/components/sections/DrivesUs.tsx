@@ -4,24 +4,26 @@ const DrivesUs = () => {
   return (
     <div
       id="DrivesUs"
-      className="flex items-center justify-center overflow-hidden text-brightBg customGradientVioletRight"
+      className="flex flex-col md:flex-row text-brightBg px-4 sm:px-12 2xl:px-32 py-8 sm:py-16 md:py-20 gap-6 customGradientVioletRight"
     >
-      <div className="w-[40%] py-20 flex justify-start">
-        <div className="w-[90%]">
-          <h2 className="text-5xl font-bold pb-5 tracking-wider">
-            WHAT DRIVES US?
+      <div className="flex justify-start items-center">
+        <div className="">
+          <h2 className="text-5xl lg:text-6xl font-bold tracking-wider">
+            WHAT DRIVES{"\u00A0"}US?
           </h2>
           <br />
-          <p className="text-lg w-[70%]">
-            Our main goal is to make games that are meaningful both to us and the players. <br/><br/>
-
-            Whatever we do, we strive to break the schemes in every aspect of life. <br/><br/>
-
+          <p className="text-lg xl:text-2xl">
+            Our main goal is to make games that are meaningful both to us and
+            the players. <br />
+            <br />
+            Whatever we do, we strive to break the schemes in every aspect of
+            life. <br />
+            <br />
             We believe that bonds are to be broken.
           </p>
         </div>
       </div>
-      <div className="w-[40%] py-20">
+      <div className="md:max-w-[50%] flex items-center">
         <img src="/handshake.jpg" alt="KRYSZTAL" />
       </div>
     </div>
