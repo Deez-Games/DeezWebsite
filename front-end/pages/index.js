@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Landing from "../components/sections/Landing";
-import Slide from "../components/Slide";
 import MainSection from "../components/MainSection";
 
 export default function Home() {
@@ -12,9 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Slide>
-        <Landing />
-      </Slide>
+      <Landing />
       <MainSection />
     </>
   );

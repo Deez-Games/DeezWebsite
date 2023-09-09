@@ -49,7 +49,7 @@ const GamesTiles = () => {
   return (
     <div
       id="Games"
-      className="h-full flex justify-between w-full overflow-hidden py-20 px-10"
+      className="h-full flex justify-between w-full overflow-hidden py-20 px-10 w-full h-screen"
     >
       <div className="flex items-center w-1/4">
         <Link href="/Games">
