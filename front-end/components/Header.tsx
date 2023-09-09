@@ -22,15 +22,10 @@ const Header = () => {
       }`}
     >
       <div className="w-[95%] flex justify-end">
-        <div className="flex w-1/2 xl:w-1/3 justify-between gap-2">
+        <div className="flex w-1/3 lg:w-1/4 justify-between gap-2">
           <Link href="/">
             <span className="hover:text-textHover font-bold cursor-pointer">
               HOME
-            </span>
-          </Link>
-          <Link href="/Games">
-            <span className="hover:text-textHover font-bold cursor-pointer">
-              GAMES
             </span>
           </Link>
           <Link href="/#AboutUs">
@@ -38,14 +33,14 @@ const Header = () => {
               ABOUT
             </span>
           </Link>
+          <Link href="/#Games">
+            <span className="hover:text-textHover font-bold cursor-pointer">
+              GAMES
+            </span>
+          </Link>
           <Link href="/#Contact">
             <span className="hover:text-textHover font-bold cursor-pointer">
               CONTACT
-            </span>
-          </Link>
-          <Link href="/#Investors">
-            <span className="hover:text-textHover font-bold cursor-pointer">
-              INVESTORS
             </span>
           </Link>
         </div>

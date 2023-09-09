@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import games from "../../data/games.json";
 import Link from "next/link";
