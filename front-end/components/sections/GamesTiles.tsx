@@ -1,9 +1,36 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import games from "../../data/games.json";
 import Link from "next/link";
+import GamePanel from "../GamePanel";
+import { BsNintendoSwitch, BsSteam } from "react-icons/bs";
 
 const GamesTiles = () => {
+  const onClose = () => {setShowModal(false)}
+  const [showModal,setShowModal] = useState (false)
+
+  const steam = { name: "Steam", icon: <BsSteam /> };
+  const nintendo = { name: "Steam", icon: <BsNintendoSwitch /> };
+
+  const [modalGame,setModalGame] = useState({
+    name: "",
+    platforms: [],
+    description: "",
+  })
+
+  const modalGames = {
+    gauntler: {
+      name: "Gauntler",
+      platforms: [steam, nintendo],
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
+    },
+    
+    babushcats: {
+      name: "Babushcats",
+      platforms: [steam],
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
+    },
+  };
   function changeWidth(e: any) {
     for (const game of games) {
       if (e.target.classList.contains(game.class.substring(1))) {
@@ -69,21 +96,41 @@ const GamesTiles = () => {
       </div>
       <div onMouseLeave={restoreWidth} className="flex w-3/4 bg-black">
         <div
+          onClick={
+            () => {
+              setShowModal(true);
+              setModalGame(modalGames.gauntler);
+            } 
+          }
           onMouseEnter={changeWidth}
-          className="babushcats flex w-1/3 bg-[url('/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500"
+          className="babushcats flex w-1/3 bg-[url('/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
-        <div
+        <div 
+          onClick={
+            () => {
+              setShowModal(true);
+              setModalGame(modalGames.babushcats);
+            } 
+          }
           onMouseEnter={changeWidth}
-          className="gauntler flex w-1/3 bg-[url('/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500"
+          className="gauntler flex w-1/3 bg-[url('/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
-        <div
+        <div 
+          onClick={
+            () => {
+              setShowModal(true);
+              setModalGame(modalGames.gauntler);
+            } 
+          }
           onMouseEnter={changeWidth}
-          className="project-plane flex w-1/3 bg-[url('/gauntler3.png')] bg-no-repeat bg-center bg-cover duration-500"
+          className="project-plane flex w-1/3 bg-[url('/gauntler3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
       </div>
+      <GamePanel isVisible = {showModal} onClose ={onClose} header={modalGame.name} description={modalGame.description} platforms={modalGame.platforms}/>
     </div>
+    
   );
 };
 
