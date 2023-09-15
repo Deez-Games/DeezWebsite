@@ -9,8 +9,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex justify-center flex-col items-center w-full gap-y-10 py-20">
-      <div className="flex text-5xl justify-between w-[60rem]">
+    <div className="flex flex-col items-center w-full gap-y-8 py-16 text-textLightGrey">
+      <h6 className="text-2xl font-bold">Follow Deez Games on:</h6>
+      <div className="flex text-3xl sm:text-4xl justify-between gap-6 sm:gap-16 transit transition-all ease-in-out">
         <span className="">
           <BsYoutube />
         </span>
@@ -27,8 +28,8 @@ const Footer = () => {
           <BsFacebook />
         </span>
       </div>
-      <span className="bg-white w-[70rem] h-[1px]"></span>
-      <div className="flex w-[50rem] text-xs justify-between">
+      <span className="bg-white w-[90%] h-[1px]"></span>
+      <div className="grid md:flex text-sm font-bold grid-cols-2 text-textDarkGrey text-center gap-4">
         <p>Polityka prywatnosci</p>
         <p>Polityka Cookies</p>
         <p>Umowa użytkownika</p>
