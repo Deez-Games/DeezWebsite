@@ -6,29 +6,33 @@ import GamePanel from "../GamePanel";
 import { BsNintendoSwitch, BsSteam } from "react-icons/bs";
 
 const GamesTiles = () => {
-  const onClose = () => {setShowModal(false)}
-  const [showModal,setShowModal] = useState (false)
+  const onClose = () => {
+    setShowModal(false);
+  };
+  const [showModal, setShowModal] = useState(false);
 
   const steam = { name: "Steam", icon: <BsSteam /> };
   const nintendo = { name: "Steam", icon: <BsNintendoSwitch /> };
 
-  const [modalGame,setModalGame] = useState({
+  const [modalGame, setModalGame] = useState({
     name: "",
     platforms: [],
     description: "",
-  })
+  });
 
   const modalGames = {
     gauntler: {
       name: "Gauntler",
       platforms: [steam, nintendo],
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
     },
-    
+
     babushcats: {
       name: "Babushcats",
       platforms: [steam],
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
     },
   };
   function changeWidth(e: any) {
@@ -40,13 +44,19 @@ const GamesTiles = () => {
             .querySelector(game.class)
             ?.classList.contains("md:brightness-50")
         ) {
-          document.querySelector(game.class)?.classList.remove("md:brightness-50");
+          document
+            .querySelector(game.class)
+            ?.classList.remove("md:brightness-50");
         }
       } else {
-        if (document.querySelector(game.class)?.classList.contains("md:w-8/12")) {
+        if (
+          document.querySelector(game.class)?.classList.contains("md:w-8/12")
+        ) {
           document.querySelector(game.class)?.classList.remove("md:w-8/12");
         }
-        if (document.querySelector(game.class)?.classList.contains("md:w-1/3")) {
+        if (
+          document.querySelector(game.class)?.classList.contains("md:w-1/3")
+        ) {
           document.querySelector(game.class)?.classList.remove("md:w-1/3");
         }
         document
@@ -65,9 +75,13 @@ const GamesTiles = () => {
         document.querySelector(game.class)?.classList.remove("md:w-2/12");
       }
       if (
-        document.querySelector(game.class)?.classList.contains("md:brightness-50")
+        document
+          .querySelector(game.class)
+          ?.classList.contains("md:brightness-50")
       ) {
-        document.querySelector(game.class)?.classList.remove("md:brightness-50");
+        document
+          .querySelector(game.class)
+          ?.classList.remove("md:brightness-50");
       }
       document.querySelector(game.class)?.classList.add("md:w-1/3");
     }
@@ -94,44 +108,45 @@ const GamesTiles = () => {
           </div>
         </Link>
       </div>
-      <div onMouseLeave={restoreWidth} className="flex space-x-8 md:space-x-0 justify-between md:justify-normal h-full w-full md:w-3/4 md:bg-black">
+      <div
+        onMouseLeave={restoreWidth}
+        className="flex space-x-8 md:space-x-0 justify-between md:justify-normal h-full w-full md:w-3/4 md:bg-black"
+      >
         <div
-          onClick={
-            () => {
-              setShowModal(true);
-              setModalGame(modalGames.gauntler);
-            } 
-          }
+          onClick={() => {
+            setShowModal(true);
+            setModalGame(modalGames.gauntler);
+          }}
           onMouseEnter={changeWidth}
-          className="babushcats flex w-1/2 md:w-1/3 bg-[url('/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500"
-
+          className="babushcats flex w-1/2 md:w-1/3 bg-[url('/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
-        <div 
-          onClick={
-            () => {
-              setShowModal(true);
-              setModalGame(modalGames.babushcats);
-            } 
-          }
+        <div
+          onClick={() => {
+            setShowModal(true);
+            setModalGame(modalGames.babushcats);
+          }}
           onMouseEnter={changeWidth}
-          className="gauntler flex w-1/2 md:w-1/3 bg-[url('/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500"
+          className="gauntler flex w-1/2 md:w-1/3 bg-[url('/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
-        <div 
-          onClick={
-            () => {
-              setShowModal(true);
-              setModalGame(modalGames.gauntler);
-            } 
-          }
+        <div
+          onClick={() => {
+            setShowModal(true);
+            setModalGame(modalGames.gauntler);
+          }}
           onMouseEnter={changeWidth}
-          className="project-plane hidden md:flex w-1/3 bg-[url('/gauntler3.png')] bg-no-repeat bg-center bg-cover duration-500"
+          className="project-plane hidden md:flex w-1/3 bg-[url('/gauntler3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
       </div>
-      <GamePanel isVisible = {showModal} onClose ={onClose} header={modalGame.name} description={modalGame.description} platforms={modalGame.platforms}/>
+      <GamePanel
+        isVisible={showModal}
+        closeModal={onClose}
+        header={modalGame.name}
+        description={modalGame.description}
+        platforms={modalGame.platforms}
+      />
     </div>
-    
   );
 };
 

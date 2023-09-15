@@ -1,40 +1,53 @@
-import React, {ReactNode} from "react";
-
+import React from "react";
 
 export interface Props {
-    isVisible : boolean;
-    onClose : () => void;
-    header : string;
-    description: string;
-    platforms: any;
+  isVisible: boolean;
+  closeModal: () => void;
+  header: string;
+  description: string;
+  platforms: any;
 }
-const GamePanel = ({ isVisible, onClose, header, description, platforms } : Props ) => {
-console.log(platforms)
-console.log(header)
+const GamePanel = ({
+  isVisible,
+  closeModal,
+  header,
+  description,
+  platforms,
+}: Props) => {
+  if (!isVisible) return null;
 
-    if (!isVisible) return null;
-
-    const handleClose = (e) => {
-        if(e.target.id === 'wrapper' ) onClose();
-    }
-
-    return (
-        <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center" id="wrapper" 
-        onClick={() => onClose()}>
-            <div className="flex flex-col"> 
-                <div className="w-[1200px] h-[600px] flex flex-col gap-10 font-bold justify-center bg-darkGrey p-5 px-20 rounded"> 
-                  <h2 className="text-6xl">{header}</h2>
-                  <p className="text-2xl w-2/5">{description}</p>
-                  <div className="flex flex-row gap-5 text-4xl">
-                    {platforms.map(({icon}) => icon)}
-                  </div>
-                  <div className="clear-left max-w-2xl">
-                    <img src="gauntlerGameTile.png" alt={header} />
-                  </div>
-                </div>
-            </div>
+  return (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center cursor-pointer"
+      id="wrapper"
+      onClick={() => closeModal()}
+    >
+      <div
+        className="relative w-[90%] md:w-[80%] h-[65%] flex flex-col lg:flex-row items-center justify-center lg:justify-around gap-8 font-bold bg-darkBg p-4 sm:p-8 rounded"
+        onClick={() => {}}
+      >
+        <div className="flex flex-col gap-8">
+          <h2 className="text-4xl">{header}</h2>
+          <p className="text-xl">{description}</p>
+          <div className="flex gap-5 text-4xl">
+            {platforms.map(({ icon }) => icon)}
+          </div>
         </div>
-    );
+
+        <div className="md:max-w-[60%]">
+          <img
+            className="max-h-[250px] lg:max-h-full"
+            src="gauntlerGameTile.png"
+            alt={header}
+          />
+        </div>
+
+        <p className="absolute bottom-2 text-md text-textGrey">
+          Click anywhere to close
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default GamePanel;
