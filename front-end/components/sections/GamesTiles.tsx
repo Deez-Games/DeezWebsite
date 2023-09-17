@@ -110,7 +110,7 @@ const GamesTiles = () => {
       </div>
       <div
         onMouseLeave={restoreWidth}
-        className="flex space-x-8 md:space-x-0 justify-between md:justify-normal h-full w-full md:w-3/4 md:bg-black"
+        className="flex space-x-8 md:space-x-0 justify-between md:justify-normal h-full w-full md:w-3/5 lg:w-2/3 xl:w-3/4 md:bg-black"
       >
         <div
           onClick={() => {

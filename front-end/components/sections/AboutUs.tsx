@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div
       id="AboutUs"
-      className="flex flex-col-reverse md:flex-row gap-6 overflow-hidden bg-brightBg text-black px-4 sm:px-12 2xl:px-32 py-12 sm:py-24"
+      className="flex flex-col-reverse md:flex-row gap-6 overflow-hidden bg-brightBg text-black px-4 sm:px-12 2xl:px-32 py-8 sm:py-24"
     >
       <div className="lg:max-w-[50%] flex justify-center items-center">
         <img src="/handshake.jpg" alt="KRYSZTAL" />
