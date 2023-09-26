@@ -28,14 +28,6 @@ const Footer = () => {
           <BsFacebook />
         </span>
       </div>
-      <span className="bg-white w-[90%] h-[1px]"></span>
-      <div className="grid md:flex text-sm font-bold grid-cols-2 text-textDarkGrey text-center gap-4">
-        <p>Polityka prywatnosci</p>
-        <p>Polityka Cookies</p>
-        <p>Umowa użytkownika</p>
-        <p>Klauzula informacyjna</p>
-      </div>
-      {/* <p>Copyright &copy; 2023 DEEZ GAMES. All rights resrved.</p> */}
     </div>
   );
 };

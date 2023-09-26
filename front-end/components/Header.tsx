@@ -28,17 +28,17 @@ const Header = () => {
               HOME
             </span>
           </Link>
-          <Link href="/#AboutUs">
+          <Link href="/#AboutUs" scroll={false}>
             <span className="hover:text-textHover font-bold cursor-pointer">
               ABOUT
             </span>
           </Link>
-          <Link href="/#Games">
+          <Link href="/#Games" scroll={false}>
             <span className="hover:text-textHover font-bold cursor-pointer">
               GAMES
             </span>
           </Link>
-          <Link href="/#Contact">
+          <Link href="/#Contact" scroll={false}>
             <span className="hover:text-textHover font-bold cursor-pointer">
               CONTACT
             </span>
