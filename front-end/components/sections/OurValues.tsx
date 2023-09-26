@@ -5,7 +5,7 @@ import MotivationCard from "../items/MotivationCard";
 
 const OurValues = () => {
   return (
-    <div className="bg-brightBg flex flex-col items-center px-4 sm:px-12 2xl:px-32 py-8 sm:py-16 md:py-20 gap-6 md:gap-12">
+    <div className="bg-brightBg flex flex-col items-center px-4 sm:px-12 2xl:px-32 py-8 sm:py-24 gap-6 md:gap-12">
       <div className="text-black text-5xl sm:text-7xl font-bold text-center">
         <span className="text-violet">DEEZ</span>
         {"\u00A0"}ARE OUR{"\u00A0"}VALUES

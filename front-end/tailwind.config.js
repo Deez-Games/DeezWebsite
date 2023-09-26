@@ -17,6 +17,7 @@ module.exports = {
 
         textBright: "#ffffff",
         textLightGrey: "#DFE1F3",
+        textGrey: "#B4B4B4",
         textDarkGrey: "#414462",
         textHover: "#c8cad2",
         violet: "#4700DF",
