@@ -4,7 +4,7 @@ const NewsLetter = () => {
   return (
     <div
       id="Contact"
-      className="flex flex-col items-center justify-center gap-12 bg-brightBg text-black py-16"
+      className="flex flex-col items-center justify-center gap-12 bg-brightBg text-black py-16 shadow-insetBottom"
     >
       <h3 className="text-5xl whitespace-nowrap font-bold flex items-center">
         Subscribe to our newsletter!

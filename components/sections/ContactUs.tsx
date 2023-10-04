@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <div
       id="Contact"
-      className="flex flex-col sm:flex-row-reverse items-center sm:justify-evenly px-4 sm:px-12 2xl:px-32 py-8 sm:py-16 md:py-20 customGradientVioletLeft gap-6"
+      className="flex flex-col sm:flex-row-reverse items-center sm:justify-evenly px-4 sm:px-12 2xl:px-32 py-8 sm:py-16 md:py-20 customGradientVioletLeft gap-6 shadow-insetBottom"
     >
       <div className="flex flex-col gap-2 md:gap-0 text-right text-textBright">
         <h4 className="text-2xl lg:text-4xl">GOT A QUESTION?</h4>

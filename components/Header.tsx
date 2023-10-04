@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   const [scrollOnTop, setScrollOnTop] = useState(true);
@@ -15,14 +17,27 @@ const Header = () => {
     }
   }, []);
 
+  function showSideNav() {
+    const sideNav = document.querySelector(".side-nav");
+    sideNav.classList.replace('translate-x-[100vw]','translate-x-0');
+  }
+
   return (
     <div
-      className={`hidden md:block flex justify-center w-full opacity-1 py-5 fixed top-0 z-10 ${
+      className={`flex justify-center items-center w-full opacity-1 py-5 fixed top-0 z-10 ${
         scrollOnTop ? "" : "bg-darkGrey bg-opacity-60"
       }`}
     >
-      <div className="w-[95%] flex justify-end">
-        <div className="flex w-1/3 lg:w-1/4 justify-between gap-2">
+      <div className="w-[95%] flex justify-between">
+        <div className="pl-10">
+          <Image
+            src="/logo.png"
+            width={30}
+            height={30}
+            alt="Deez Games logo"
+          />
+        </div>
+        <div className="hidden md:flex w-1/3 lg:w-1/4 justify-between gap-2">
           <Link href="/">
             <span className="hover:text-textHover font-bold cursor-pointer">
               HOME
@@ -43,6 +58,12 @@ const Header = () => {
               CONTACT
             </span>
           </Link>
+        </div>
+        <div className="flex md:hidden justify-between text-3xl">
+          <div></div>
+          <button onClick={showSideNav}>
+            <RxHamburgerMenu />
+          </button>
         </div>
       </div>
     </div>
