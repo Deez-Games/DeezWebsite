@@ -118,7 +118,7 @@ const GamesTiles = () => {
             setModalGame(modalGames.gauntler);
           }}
           onMouseEnter={changeWidth}
-          className="babushcats flex w-1/2 md:w-1/3 bg-[url('/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
+          className="babushcats flex w-1/2 md:w-1/3 bg-[url('../public/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
         <div
@@ -127,7 +127,7 @@ const GamesTiles = () => {
             setModalGame(modalGames.babushcats);
           }}
           onMouseEnter={changeWidth}
-          className="gauntler flex w-1/2 md:w-1/3 bg-[url('/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
+          className="gauntler flex w-1/2 md:w-1/3 bg-[url('../public/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
         <div
@@ -136,7 +136,7 @@ const GamesTiles = () => {
             setModalGame(modalGames.gauntler);
           }}
           onMouseEnter={changeWidth}
-          className="project-plane hidden md:flex w-1/3 bg-[url('/gauntler3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
+          className="project-plane hidden md:flex w-1/3 bg-[url('../public/gauntler3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
       </div>
       <GamePanel
