@@ -17,6 +17,7 @@ module.exports = {
 
         textBright: "#ffffff",
         textLightGrey: "#DFE1F3",
+        textGrey: "#B4B4B4",
         textDarkGrey: "#414462",
         textHover: "#c8cad2",
         violet: "#4700DF",
@@ -44,6 +45,7 @@ module.exports = {
       },
       boxShadow: {
         imageShadow: "16px 16px 0px 0px rgb(91, 13, 218)",
+        insetBottom: "inset 0px -24px 20px -20px rgba(0, 0, 0, 0.5)",
       },
     },
   },
