@@ -24,7 +24,7 @@ const GamesList = () => {
     <div className="flex gap-4 justify-center items-center flex-wrap min-h-screen">
       {games.map(({ name, platforms, img, bgClass }) => (
         <div key={name} className="">
-          <img src={img} alt="" className="object-cover h-96 w-64" />
+          <img src={`/${img}`} alt={name} className="object-cover h-96 w-64" />
           <div className="flex flex-col gap-2 text-2xl">
             <span className="font-bold">{name}</span>
             <div className="flex gap-3">
