@@ -18,7 +18,7 @@ const GamePanel = ({
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center cursor-pointer"
+      className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center cursor-pointer min-h-[440px]"
       id="wrapper"
       onClick={() => closeModal()}
     >
