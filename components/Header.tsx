@@ -30,12 +30,15 @@ const Header = () => {
     >
       <div className="w-[95%] flex justify-between">
         <div className="pl-10">
-          <Image
-            src="/logo.png"
-            width={30}
-            height={30}
-            alt="Deez Games logo"
-          />
+          <Link href="/">
+            <Image
+              className="cursor-pointer"
+              src="/logo.png"
+              width={30}
+              height={30}
+              alt="Deez Games logo"
+            />
+          </Link>
         </div>
         <div className="hidden md:flex w-1/3 lg:w-1/4 justify-between gap-2">
           <Link href="/">
