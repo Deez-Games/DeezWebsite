@@ -9,13 +9,13 @@ const GamesList = () => {
     {
       name: "Gauntler",
       platforms: [steam, nintendo],
-      img: "./gauntlerGameTile.png",
+      img: "gauntlerGameTile.png",
       bgClass: "gauntlerTile",
     },
     {
       name: "Babushcats",
       platforms: [steam],
-      img: "./babushcatsGameTile.png",
+      img: "babushcatsGameTile.png",
       bgClass: "babushcatsTile",
     },
   ];
