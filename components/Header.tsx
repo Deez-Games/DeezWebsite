@@ -15,7 +15,7 @@ const Header = () => {
         setScrollOnTop(window.pageYOffset <= showHeaderBgPx)
       );
     }
-  }, []);
+  }, [showHeaderBgPx]);
 
   function showSideNav() {
     const sideNav = document.querySelector(".side-nav");
@@ -31,9 +31,9 @@ const Header = () => {
       <div className="w-[95%] flex justify-between">
         <div className="pl-10">
           <Link href="/">
-            <Image
+            <img
               className="cursor-pointer"
-              src="/logo.png"
+              src="logo.png"
               width={30}
               height={30}
               alt="Deez Games logo"

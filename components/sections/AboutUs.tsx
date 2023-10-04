@@ -7,7 +7,7 @@ const AboutUs = () => {
       className="flex flex-col-reverse md:flex-row gap-6 overflow-hidden bg-brightBg text-black px-4 sm:px-12 2xl:px-32 py-8 sm:py-24 shadow-insetBottom"
     >
       <div className="lg:max-w-[50%] flex justify-center items-center">
-        <img src="/ourphoto.jpeg" alt="our photo" />
+        <img src="ourphoto.jpeg" alt="our photo" />
       </div>
       <div className="lg:text-right flex flex-col justify-center items-center">
         <div>
