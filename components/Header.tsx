@@ -33,7 +33,7 @@ const Header = () => {
           <Link href="/">
             <img
               className="cursor-pointer"
-              src="logo.png"
+              src="./logo.png"
               width={30}
               height={30}
               alt="Deez Games logo"

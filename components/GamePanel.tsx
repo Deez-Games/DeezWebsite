@@ -37,7 +37,7 @@ const GamePanel = ({
         <div className="md:max-w-[60%]">
           <img
             className="max-h-[250px] lg:max-h-full"
-            src="gauntlerGameTile.png"
+            src="./gauntlerGameTile.png"
             alt={header}
           />
         </div>
