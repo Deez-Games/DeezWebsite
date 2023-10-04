@@ -18,9 +18,9 @@ const Footer = () => {
         <span className="">
           <BsTwitter />
         </span>
-        <span className="">
+        {/* <span className="">
           <BsSteam />
-        </span>
+        </span> */}
         <span className="">
           <BsInstagram />
         </span>

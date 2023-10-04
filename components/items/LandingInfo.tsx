@@ -10,7 +10,7 @@ const LandingInfo = () => {
         </span>
       </div>
       <h3 className="text-xl lg:text-2xl font-bold">
-        On Nintendo Switch and Steam!
+        on Nintendo Switch!
       </h3>
       <label className="flex justify-evenly gap-x-10 text-lg self-center">
         <span className="tracking-wide text-xl underline font-bold tracking-wider">

@@ -23,14 +23,14 @@ const GamesTiles = () => {
   const modalGames = {
     gauntler: {
       name: "Gauntler",
-      platforms: [steam, nintendo],
+      platforms: [nintendo],
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
     },
 
     babushcats: {
       name: "Babushcats",
-      platforms: [steam],
+      platforms: [],
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
     },
