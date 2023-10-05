@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export interface Props {
@@ -30,14 +31,16 @@ const GamePanel = ({
           <h2 className="text-4xl">{header}</h2>
           <p className="text-xl">{description}</p>
           <div className="flex gap-5 text-4xl">
-            {platforms.map(({ icon }) => icon)}
+            {platforms.map(({ icon, name }) => 
+              name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : icon
+          )}
           </div>
         </div>
 
         <div className="md:max-w-[60%]">
           <img
             className="max-h-[250px] lg:max-h-full"
-            src="gauntlerGameTile.png"
+            src="https://deez-games.github.io/DeezWebsite/gauntlerGameTile.png"
             alt={header}
           />
         </div>

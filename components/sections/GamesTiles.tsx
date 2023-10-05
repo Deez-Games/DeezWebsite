@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import games from "../../data/games.json";
-import Link from "next/link";
 import GamePanel from "../GamePanel";
 import { BsNintendoSwitch, BsSteam } from "react-icons/bs";
 
@@ -11,8 +10,8 @@ const GamesTiles = () => {
   };
   const [showModal, setShowModal] = useState(false);
 
-  const steam = { name: "Steam", icon: <BsSteam /> };
-  const nintendo = { name: "Steam", icon: <BsNintendoSwitch /> };
+  const steam = { name: "steam", icon: <BsSteam /> };
+  const nintendo = { name: "nintendo", icon: <BsNintendoSwitch /> };
 
   const [modalGame, setModalGame] = useState({
     name: "",
@@ -93,20 +92,18 @@ const GamesTiles = () => {
       className="h-screen flex md:flex-row flex-col md:justify-between w-full overflow-hidden p-8 md:py-20 md:px-10 shadow-insetBottom"
     >
       <div className="flex items-center justify-center md:justify-normal w-full md:w-1/4 pb-8 md:pb-0">
-        <Link href="/Games">
-          <div className="flex flex-col items-center justify-center font-bold cursor-pointer">
-            <div>
-              <label className="flex items-end text-7xl gap-2">
-                DEEZ <span className="text-3xl pb-1">are</span>
-              </label>
-            </div>
-            <div className="flex justify-start">
-              <label className="flex items-start text-7xl gap-2">
-                <span className="text-3xl">our</span> GAMES
-              </label>
-            </div>
+        <div className="flex flex-col items-center justify-center font-bold cursor-pointer">
+          <div>
+            <label className="flex items-end text-7xl gap-2">
+              DEEZ <span className="text-3xl pb-1">are</span>
+            </label>
           </div>
-        </Link>
+          <div className="flex justify-start">
+            <label className="flex items-start text-7xl gap-2">
+              <span className="text-3xl">our</span> GAMES
+            </label>
+          </div>
+        </div>
       </div>
       <div
         onMouseLeave={restoreWidth}

@@ -14,10 +14,10 @@ const LandingInfo = () => {
       </h3>
       <label className="flex justify-evenly gap-x-10 text-lg self-center">
         <span className="tracking-wide text-xl underline font-bold tracking-wider">
-          <Link href="/">CHECK OUT</Link>
+          <Link href="https://www.nintendo.com/store/products/gauntler-switch/">CHECK OUT</Link>
         </span>
         <span className="tracking-wide text-xl underline font-bold tracking-wider">
-          <Link href="/">TRAILER</Link>
+          <Link href="https://www.nintendo.com/store/products/gauntler-switch/">TRAILER</Link>
         </span>
       </label>
     </div>
