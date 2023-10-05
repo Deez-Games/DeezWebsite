@@ -89,7 +89,7 @@ const GamesTiles = () => {
   return (
     <div
       id="Games"
-      className="h-screen flex md:flex-row flex-col md:justify-between w-full overflow-hidden p-8 md:py-20 md:px-10 shadow-insetBottom"
+      className="h-screen flex md:flex-row flex-col md:justify-between w-full overflow-hidden px-4 sm:px-12 2xl:px-32 py-8 sm:py-24 shadow-insetBottom"
     >
       <div className="flex items-center justify-center md:justify-normal w-full md:w-1/4 pb-8 md:pb-0">
         <div className="flex flex-col items-center justify-center font-bold cursor-pointer">
