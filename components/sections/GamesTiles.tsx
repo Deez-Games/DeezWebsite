@@ -24,14 +24,14 @@ const GamesTiles = () => {
       name: "Gauntler",
       platforms: [nintendo],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
+        "Avoid numerous dangers using the power of Mystical Gauntlets and make your way to the summit, braving increasingly harder challenges.",
     },
 
     babushcats: {
       name: "Babushcats",
       platforms: [],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, obcaecati.",
+        "Take on the role of a lovely elderly grandmother. Your main task in this game is to take care of the cute kittens that have arrived at your cosy home.",
     },
   };
   function changeWidth(e: any) {
@@ -124,7 +124,7 @@ const GamesTiles = () => {
             setModalGame(modalGames.babushcats);
           }}
           onMouseEnter={changeWidth}
-          className="gauntler flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
+          className="gauntler flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/Banerbbsh3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
       </div>
