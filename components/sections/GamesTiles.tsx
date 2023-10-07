@@ -37,7 +37,7 @@ const GamesTiles = () => {
   function changeWidth(e: any) {
     for (const game of games) {
       if (e.target.classList.contains(game.class.substring(1))) {
-        e.target.classList.add("md:w-8/12");
+        e.target.classList.add("md:w-10/12");
         if (
           document
             .querySelector(game.class)
@@ -54,9 +54,9 @@ const GamesTiles = () => {
           document.querySelector(game.class)?.classList.remove("md:w-8/12");
         }
         if (
-          document.querySelector(game.class)?.classList.contains("md:w-1/3")
+          document.querySelector(game.class)?.classList.contains("md:w-1/2")
         ) {
-          document.querySelector(game.class)?.classList.remove("md:w-1/3");
+          document.querySelector(game.class)?.classList.remove("md:w-1/2");
         }
         document
           .querySelector(game.class)
@@ -67,8 +67,8 @@ const GamesTiles = () => {
 
   function restoreWidth() {
     for (const game of games) {
-      if (document.querySelector(game.class)?.classList.contains("md:w-8/12")) {
-        document.querySelector(game.class)?.classList.remove("md:w-8/12");
+      if (document.querySelector(game.class)?.classList.contains("md:w-10/12")) {
+        document.querySelector(game.class)?.classList.remove("md:w-10/12");
       }
       if (document.querySelector(game.class)?.classList.contains("md:w-2/12")) {
         document.querySelector(game.class)?.classList.remove("md:w-2/12");
@@ -82,7 +82,7 @@ const GamesTiles = () => {
           .querySelector(game.class)
           ?.classList.remove("md:brightness-50");
       }
-      document.querySelector(game.class)?.classList.add("md:w-1/3");
+      document.querySelector(game.class)?.classList.add("md:w-1/2");
     }
   }
 
@@ -107,7 +107,7 @@ const GamesTiles = () => {
       </div>
       <div
         onMouseLeave={restoreWidth}
-        className="flex space-x-8 md:space-x-0 justify-between md:justify-normal h-full w-full md:w-3/5 lg:w-2/3 xl:w-3/4 md:bg-black"
+        className="flex space-x-8 md:space-x-20 lg:space-x-32 justify-between h-full w-full md:w-3/5 lg:w-2/3 xl:w-3/4"
       >
         <div
           onClick={() => {
@@ -115,7 +115,7 @@ const GamesTiles = () => {
             setModalGame(modalGames.gauntler);
           }}
           onMouseEnter={changeWidth}
-          className="babushcats flex w-1/2 md:w-1/3 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
+          className="babushcats flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
         <div
@@ -124,17 +124,9 @@ const GamesTiles = () => {
             setModalGame(modalGames.babushcats);
           }}
           onMouseEnter={changeWidth}
-          className="gauntler flex w-1/2 md:w-1/3 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
+          className="gauntler flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler2.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
-        <div
-          onClick={() => {
-            setShowModal(true);
-            setModalGame(modalGames.gauntler);
-          }}
-          onMouseEnter={changeWidth}
-          className="project-plane hidden md:flex w-1/3 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
-        ></div>
       </div>
       <GamePanel
         isVisible={showModal}
