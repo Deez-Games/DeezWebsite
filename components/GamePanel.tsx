@@ -38,11 +38,9 @@ const GamePanel = ({
         </div>
 
         <div className="md:max-w-[60%]">
-          <img
-            className="max-h-[250px] lg:max-h-full"
-            src="https://deez-games.github.io/DeezWebsite/gauntlerGameTile.png"
-            alt={header}
-          />
+          <video width="640" height="480" controls>
+            <source src="https://deez-games.github.io/DeezWebsite/public.mp4" type="video/mp4" />
+          </video>
         </div>
 
         <p className="absolute bottom-2 text-md text-textGrey">
