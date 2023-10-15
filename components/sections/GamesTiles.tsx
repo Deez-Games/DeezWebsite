@@ -22,7 +22,7 @@ const GamesTiles = () => {
   const modalGames = {
     gauntler: {
       name: "Gauntler",
-      platforms: [nintendo],
+      platforms: [nintendo, steam],
       description:
         "Avoid numerous dangers using the power of Mystical Gauntlets and make your way to the summit, braving increasingly harder challenges.",
     },
@@ -36,52 +36,45 @@ const GamesTiles = () => {
   };
   function changeWidth(e: any) {
     for (const game of games) {
+
       if (e.target.classList.contains(game.class.substring(1))) {
+
         e.target.classList.add("md:w-10/12");
-        if (
-          document
-            .querySelector(game.class)
-            ?.classList.contains("md:brightness-50")
-        ) {
-          document
-            .querySelector(game.class)
-            ?.classList.remove("md:brightness-50");
+
+        if (document.querySelector(game.class)?.classList.contains("md:brightness-50")) {
+          document.querySelector(game.class)?.classList.remove("md:brightness-50");
         }
+
       } else {
-        if (
-          document.querySelector(game.class)?.classList.contains("md:w-8/12")
-        ) {
-          document.querySelector(game.class)?.classList.remove("md:w-8/12");
+
+        if (document.querySelector(game.class)?.classList.contains("md:w-10/12")) {
+          document.querySelector(game.class)?.classList.remove("md:w-10/12");
         }
-        if (
-          document.querySelector(game.class)?.classList.contains("md:w-1/2")
-        ) {
+
+        if (document.querySelector(game.class)?.classList.contains("md:w-1/2")) {
           document.querySelector(game.class)?.classList.remove("md:w-1/2");
         }
-        document
-          .querySelector(game.class)
-          ?.classList.add("md:w-2/12", "md:brightness-50");
+
+        document.querySelector(game.class)?.classList.add("md:w-2/12", "md:brightness-50");
       }
     }
   }
 
   function restoreWidth() {
     for (const game of games) {
+
       if (document.querySelector(game.class)?.classList.contains("md:w-10/12")) {
         document.querySelector(game.class)?.classList.remove("md:w-10/12");
       }
+
       if (document.querySelector(game.class)?.classList.contains("md:w-2/12")) {
         document.querySelector(game.class)?.classList.remove("md:w-2/12");
       }
-      if (
-        document
-          .querySelector(game.class)
-          ?.classList.contains("md:brightness-50")
-      ) {
-        document
-          .querySelector(game.class)
-          ?.classList.remove("md:brightness-50");
+
+      if (document.querySelector(game.class)?.classList.contains("md:brightness-50")) {
+        document.querySelector(game.class)?.classList.remove("md:brightness-50");
       }
+
       document.querySelector(game.class)?.classList.add("md:w-1/2");
     }
   }
@@ -106,7 +99,6 @@ const GamesTiles = () => {
         </div>
       </div>
       <div
-        onMouseLeave={restoreWidth}
         className="flex space-x-8 md:space-x-20 lg:space-x-32 justify-between h-full w-full md:w-3/5 lg:w-2/3 xl:w-3/4"
       >
         <div
@@ -115,6 +107,7 @@ const GamesTiles = () => {
             setModalGame(modalGames.gauntler);
           }}
           onMouseEnter={changeWidth}
+          onMouseLeave={restoreWidth}
           className="babushcats flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 
@@ -124,6 +117,7 @@ const GamesTiles = () => {
             setModalGame(modalGames.babushcats);
           }}
           onMouseEnter={changeWidth}
+          onMouseLeave={restoreWidth}
           className="gauntler flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/Banerbbsh3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
 

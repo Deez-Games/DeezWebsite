@@ -32,13 +32,16 @@ const GamePanel = ({
           <p className="text-xl">{description}</p>
           <div className="flex gap-5 text-4xl">
             {platforms.map(({ icon, name }) => 
+              
               name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : icon
+
+              // name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : name === "steam" ? <Link key="name" href="{tutaj skopiuj link do gry na steam}">{icon}</Link> : icon
           )}
           </div>
         </div>
 
         <div className="md:max-w-[60%]">
-          <video width="640" height="480" controls>
+          <video width="1280" height="960" controls>
             <source src="https://deez-games.github.io/DeezWebsite/public.mp4" type="video/mp4" />
           </video>
         </div>
