@@ -34,7 +34,7 @@ const GamePanel = ({
             {platforms.map(({ icon, name }) =>
 
               // jak wstawisz linki to usuń ten komentarz i linijkę nizej oraz odkomentuj komentarz pod nią
-              name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link>
+              name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : icon
 
               // name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : name === "tiktok" ? <Link key="name" href="{tutaj wpisz link do tiktoka gauntlera}">{icon}</Link> : name === "youtube" ? <Link key="name" href="{tutaj wpisz link do youtube gauntlera}">{icon}</Link> : name === "twitter" ? <Link key="name" href="{tutaj wpisz link do twittera babushcats}">{icon}</Link> : icon
 
