@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import games from "../../data/games.json";
 import GamePanel from "../GamePanel";
-import { BsNintendoSwitch, BsSteam } from "react-icons/bs";
+import { BsNintendoSwitch, BsSteam, BsTiktok, BsTwitter, BsYoutube } from "react-icons/bs";
 
 const GamesTiles = () => {
   const onClose = () => {
@@ -12,6 +12,9 @@ const GamesTiles = () => {
 
   const steam = { name: "steam", icon: <BsSteam /> };
   const nintendo = { name: "nintendo", icon: <BsNintendoSwitch /> };
+  const tiktok = { name: "nintendo", icon: <BsTiktok /> };
+  const youtube = { name: "nintendo", icon: <BsYoutube /> };
+  const twitter = { name: "nintendo", icon: <BsTwitter /> };
 
   const [modalGame, setModalGame] = useState({
     name: "",
@@ -22,14 +25,14 @@ const GamesTiles = () => {
   const modalGames = {
     gauntler: {
       name: "Gauntler",
-      platforms: [nintendo, steam],
+      platforms: [nintendo, steam, tiktok, youtube],
       description:
         "Avoid numerous dangers using the power of Mystical Gauntlets and make your way to the summit, braving increasingly harder challenges.",
     },
 
     babushcats: {
       name: "Babushcats",
-      platforms: [],
+      platforms: [twitter],
       description:
         "Take on the role of a lovely elderly grandmother. Your main task in this game is to take care of the cute kittens that have arrived at your cosy home.",
     },

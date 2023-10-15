@@ -31,11 +31,13 @@ const GamePanel = ({
           <h2 className="text-4xl">{header}</h2>
           <p className="text-xl">{description}</p>
           <div className="flex gap-5 text-4xl">
-            {platforms.map(({ icon, name }) => 
-              
-              name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : icon
+            {platforms.map(({ icon, name }) =>
 
-              // name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : name === "steam" ? <Link key="name" href="{tutaj skopiuj link do gry na steam}">{icon}</Link> : icon
+              // jak wstawisz linki to usuń ten komentarz i linijkę nizej oraz odkomentuj komentarz pod nią
+              name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link>
+
+              // name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : name === "tiktok" ? <Link key="name" href="{tutaj wpisz link do tiktoka gauntlera}">{icon}</Link> : name === "youtube" ? <Link key="name" href="{tutaj wpisz link do youtube gauntlera}">{icon}</Link> : name === "twitter" ? <Link key="name" href="{tutaj wpisz link do twittera babushcats}">{icon}</Link> : icon
+
           )}
           </div>
         </div>
