@@ -23,7 +23,7 @@ const ContactUs = () => {
           player support, game questions:
           <br />
           <span className="text-violet font-bold">
-            supportdeezgames@gmail.com
+            helpdeezgames@gmail.com
           </span>
         </div>
       </div>
