@@ -12,9 +12,9 @@ const GamesTiles = () => {
 
   const steam = { name: "steam", icon: <BsSteam /> };
   const nintendo = { name: "nintendo", icon: <BsNintendoSwitch /> };
-  const tiktok = { name: "nintendo", icon: <BsTiktok /> };
-  const youtube = { name: "nintendo", icon: <BsYoutube /> };
-  const twitter = { name: "nintendo", icon: <BsTwitter /> };
+  const tiktok = { name: "tiktok", icon: <BsTiktok /> };
+  const youtube = { name: "youtube", icon: <BsYoutube /> };
+  const twitter = { name: "twitter", icon: <BsTwitter /> };
 
   const [modalGame, setModalGame] = useState({
     name: "",

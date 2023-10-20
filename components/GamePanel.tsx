@@ -35,7 +35,7 @@ const GamePanel = ({
 
 
 
-               name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : name === "tiktok" ? <Link key="name" href="https://www.tiktok.com/@gauntler_game">{icon}</Link> : name === "twitter" ? <Link key="name" href="https://twitter.com/babushcatsgame">{icon}</Link> : icon
+               name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : name === "tiktok" ? <Link key="name" href="https://www.tiktok.com/@gauntler_game">{icon}</Link> : name === "twitter" ? <Link key="name" href="https://twitter.com/babushcatsgame">{icon}</Link> : ""
 
           )}
           </div>
