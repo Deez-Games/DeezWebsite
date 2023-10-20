@@ -3,7 +3,7 @@ import LandingInfo from "../items/LandingInfo";
 
 const Landing = () => {
   return (
-    <div className="h-screen md:bg-[url('https://deez-games.github.io/DeezWebsite/GauntlerBaner.png')] md:p-32 md:bg-cover overflow-hidden shadow-insetBottom">
+    <div className="h-screen bg-[url('https://deez-games.github.io/DeezWebsite/GauntlerBaner.png')] md:p-32 bg-center bg-cover overflow-hidden shadow-insetBottom">
       <LandingInfo />
     </div>
   );
