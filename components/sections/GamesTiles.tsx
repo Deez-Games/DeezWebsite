@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import games from "../../data/games.json";
 import GamePanel from "../GamePanel";
-import { BsNintendoSwitch, BsSteam, BsTiktok, BsTwitter, BsYoutube } from "react-icons/bs";
+import { BsNintendoSwitch, BsSteam, BsTiktok, BsYoutube } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 
 const GamesTiles = () => {
   const onClose = () => {
@@ -10,11 +11,23 @@ const GamesTiles = () => {
   };
   const [showModal, setShowModal] = useState(false);
 
-  const steam = { name: "steam", icon: <BsSteam /> };
-  const nintendo = { name: "nintendo", icon: <BsNintendoSwitch /> };
-  const tiktok = { name: "tiktok", icon: <BsTiktok /> };
-  const youtube = { name: "youtube", icon: <BsYoutube /> };
-  const twitter = { name: "twitter", icon: <BsTwitter /> };
+  const steam = { name: "steam", icon: <BsSteam />, link: "" };
+  const nintendo = {
+    name: "nintendo",
+    icon: <BsNintendoSwitch />,
+    link: "https://www.nintendo.com/store/products/gauntler-switch/",
+  };
+  const tiktok = {
+    name: "tiktok",
+    icon: <BsTiktok />,
+    link: "https://www.tiktok.com/@gauntler_game",
+  };
+  const youtube = { name: "youtube", icon: <BsYoutube />, link: "" };
+  const twitter = {
+    name: "twitter",
+    icon: <FaXTwitter />,
+    link: "https://twitter.com/babushcatsgame",
+  };
 
   const [modalGame, setModalGame] = useState({
     name: "",
@@ -39,34 +52,43 @@ const GamesTiles = () => {
   };
   function changeWidth(e: any) {
     for (const game of games) {
-
       if (e.target.classList.contains(game.class.substring(1))) {
-
         e.target.classList.add("md:w-10/12");
 
-        if (document.querySelector(game.class)?.classList.contains("md:brightness-50")) {
-          document.querySelector(game.class)?.classList.remove("md:brightness-50");
+        if (
+          document
+            .querySelector(game.class)
+            ?.classList.contains("md:brightness-50")
+        ) {
+          document
+            .querySelector(game.class)
+            ?.classList.remove("md:brightness-50");
         }
-
       } else {
-
-        if (document.querySelector(game.class)?.classList.contains("md:w-10/12")) {
+        if (
+          document.querySelector(game.class)?.classList.contains("md:w-10/12")
+        ) {
           document.querySelector(game.class)?.classList.remove("md:w-10/12");
         }
 
-        if (document.querySelector(game.class)?.classList.contains("md:w-1/2")) {
+        if (
+          document.querySelector(game.class)?.classList.contains("md:w-1/2")
+        ) {
           document.querySelector(game.class)?.classList.remove("md:w-1/2");
         }
 
-        document.querySelector(game.class)?.classList.add("md:w-2/12", "md:brightness-50");
+        document
+          .querySelector(game.class)
+          ?.classList.add("md:w-2/12", "md:brightness-50");
       }
     }
   }
 
   function restoreWidth() {
     for (const game of games) {
-
-      if (document.querySelector(game.class)?.classList.contains("md:w-10/12")) {
+      if (
+        document.querySelector(game.class)?.classList.contains("md:w-10/12")
+      ) {
         document.querySelector(game.class)?.classList.remove("md:w-10/12");
       }
 
@@ -74,8 +96,14 @@ const GamesTiles = () => {
         document.querySelector(game.class)?.classList.remove("md:w-2/12");
       }
 
-      if (document.querySelector(game.class)?.classList.contains("md:brightness-50")) {
-        document.querySelector(game.class)?.classList.remove("md:brightness-50");
+      if (
+        document
+          .querySelector(game.class)
+          ?.classList.contains("md:brightness-50")
+      ) {
+        document
+          .querySelector(game.class)
+          ?.classList.remove("md:brightness-50");
       }
 
       document.querySelector(game.class)?.classList.add("md:w-1/2");
@@ -101,9 +129,7 @@ const GamesTiles = () => {
           </div>
         </div>
       </div>
-      <div
-        className="flex space-x-8 md:space-x-20 lg:space-x-32 justify-between h-full w-full md:w-3/5 lg:w-2/3 xl:w-3/4"
-      >
+      <div className="flex space-x-8 md:space-x-20 lg:space-x-32 justify-between h-full w-full md:w-3/5 lg:w-2/3 xl:w-3/4">
         <div
           onClick={() => {
             setShowModal(true);
@@ -123,7 +149,6 @@ const GamesTiles = () => {
           onMouseLeave={restoreWidth}
           className="gauntler flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/Banerbbsh3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
         ></div>
-
       </div>
       <GamePanel
         isVisible={showModal}

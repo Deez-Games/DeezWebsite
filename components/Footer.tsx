@@ -1,10 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import {
-  BsInstagram,
-  BsTwitter,
-  BsTiktok,
-} from "react-icons/bs";
+import { BsInstagram, BsTiktok } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -13,15 +10,21 @@ const Footer = () => {
       <div className="flex text-3xl sm:text-4xl justify-between gap-6 sm:gap-16 transit transition-all ease-in-out">
         <Link href="https://x.com/deezgames_?s=21">
           <span className="hover:text-textHover font-bold cursor-pointer">
-            <BsTwitter />
+            <FaXTwitter />
           </span>
         </Link>
-        <Link href="https://www.instagram.com/deezgamesofficial/" className="cursor-pointer hover:text-textHover">
+        <Link
+          href="https://www.instagram.com/deezgamesofficial/"
+          className="cursor-pointer hover:text-textHover"
+        >
           <span className="hover:text-textHover font-bold cursor-pointer">
             <BsInstagram />
           </span>
         </Link>
-        <Link href="https://www.tiktok.com/@deezgames_?is_from_webapp=1&sender_device=pc" className="cursor-pointer hover:text-textHover">
+        <Link
+          href="https://www.tiktok.com/@deezgames_?is_from_webapp=1&sender_device=pc"
+          className="cursor-pointer hover:text-textHover"
+        >
           <span className="hover:text-textHover font-bold cursor-pointer">
             <BsTiktok />
           </span>

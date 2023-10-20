@@ -31,19 +31,24 @@ const GamePanel = ({
           <h2 className="text-4xl">{header}</h2>
           <p className="text-xl">{description}</p>
           <div className="flex gap-5 text-4xl">
-            {platforms.map(({ icon, name }) =>
-
-
-
-               name === "nintendo" ? <Link key="name" href="https://www.nintendo.com/store/products/gauntler-switch/">{icon}</Link> : name === "tiktok" ? <Link key="name" href="https://www.tiktok.com/@gauntler_game">{icon}</Link> : name === "twitter" ? <Link key="name" href="https://twitter.com/babushcatsgame">{icon}</Link> : ""
-
-          )}
+            {platforms.map(({ icon, name, link }) => {
+              if (link) {
+                return (
+                  <Link key={name} href={link}>
+                    {icon}
+                  </Link>
+                );
+              }
+            })}
           </div>
         </div>
 
         <div className="md:max-w-[60%]">
           <video width="1280" height="960" controls>
-            <source src="https://deez-games.github.io/DeezWebsite/public.mp4" type="video/mp4" />
+            <source
+              src="https://deez-games.github.io/DeezWebsite/public.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
 
