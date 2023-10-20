@@ -12,7 +12,7 @@ const DrivesUs = () => {
             WHAT DRIVES{"\u00A0"}US?
           </h2>
           <br />
-          <p className="text-lg lg:text-2xl">
+          <p className="text-lg lg:text-2xl xl:max-w-[60%]">
             Our main goal is to make games that are meaningful both to us and
             the players. <br />
             <br />
