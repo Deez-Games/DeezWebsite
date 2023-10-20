@@ -34,9 +34,9 @@ const GamePanel = ({
             {platforms.map(({ icon, name, link }) => {
               if (link) {
                 return (
-                  <Link key={name} href={link}>
+                  <a target="_blank" key={name} href={link}>
                     {icon}
-                  </Link>
+                  </a>
                 );
               }
             })}
