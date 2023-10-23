@@ -116,7 +116,7 @@ const GamesTiles = () => {
       className="h-screen flex md:flex-row flex-col md:justify-between w-full overflow-hidden px-4 sm:px-12 2xl:px-32 py-8 sm:py-24 shadow-insetBottom"
     >
       <div className="flex items-center justify-center md:justify-normal w-full md:w-1/4 pb-8 md:pb-0">
-        <div className="flex flex-col items-center justify-center font-bold cursor-pointer">
+        <div className="flex flex-col items-center justify-center font-bold cursor-pointer text-white">
           <div>
             <label className="flex items-end text-7xl gap-2">
               DEEZ <span className="text-3xl pb-1">are</span>
