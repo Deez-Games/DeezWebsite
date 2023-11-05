@@ -24,7 +24,7 @@ const DrivesUs = () => {
         </div>
       </div>
       <div className="md:max-w-[50%] flex items-center">
-        <img src="handshake.jpg" alt="KRYSZTAL" />
+        <img src="retro-gaming.png" alt="passion to games is what drives us" />
       </div>
     </div>
   );
