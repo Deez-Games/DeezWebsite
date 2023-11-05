@@ -20,7 +20,7 @@ const ContactUs = () => {
         </div>
         <br />
         <div className="text-left">
-          player support, game questions:
+          Player support, game questions:
           <br />
           <span className="text-violet font-bold">helpdeezgames@gmail.com</span>
         </div>
