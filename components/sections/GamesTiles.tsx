@@ -33,6 +33,7 @@ const GamesTiles = () => {
     name: "",
     platforms: [],
     description: "",
+    trailer: "",
   });
 
   const modalGames = {
@@ -41,6 +42,7 @@ const GamesTiles = () => {
       platforms: [nintendo, steam, tiktok, youtube],
       description:
         "Avoid numerous dangers using the power of Mystical Gauntlets and make your way to the summit, braving increasingly harder challenges.",
+      trailer: "https://www.youtube.com/embed/Kt2Dkf8WS_I",
     },
 
     babushcats: {
@@ -48,6 +50,7 @@ const GamesTiles = () => {
       platforms: [twitter],
       description:
         "Take on the role of a lovely elderly grandmother. Your main task in this game is to take care of the cute kittens that have arrived at your cosy home.",
+      trailer: "https://www.youtube.com/embed/VhNXNGHMxrY",
     },
   };
   function changeWidth(e: any) {
@@ -156,6 +159,7 @@ const GamesTiles = () => {
         header={modalGame.name}
         description={modalGame.description}
         platforms={modalGame.platforms}
+        trailer={modalGame.trailer}
       />
     </div>
   );

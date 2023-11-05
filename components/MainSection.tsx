@@ -8,7 +8,7 @@ import ContactUs from "./sections/ContactUs";
 
 const MainSection = () => {
   return (
-    <div className="grid">
+    <div className="grid text-white">
       <SideNav />
       <GamesTiles />
       <AboutUs />

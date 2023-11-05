@@ -7,6 +7,7 @@ export interface Props {
   header: string;
   description: string;
   platforms: any;
+  trailer: string;
 }
 const GamePanel = ({
   isVisible,
@@ -14,6 +15,7 @@ const GamePanel = ({
   header,
   description,
   platforms,
+  trailer,
 }: Props) => {
   if (!isVisible) return null;
 
@@ -42,17 +44,11 @@ const GamePanel = ({
             })}
           </div>
         </div>
-
-        <div className="md:max-w-[60%]">
-          <video width="1280" height="960" controls>
-            <source
-              src="https://deez-games.github.io/DeezWebsite/public.mp4"
-              type="video/mp4"
-            />
-          </video>
+        <div className='md:w-[60%] h-full'>
+          <iframe className="w-full h-full" src={trailer} title="BABUSHCATS TRAILER" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         </div>
 
-        <p className="absolute bottom-2 text-md text-textGrey">
+        <p className="md:absolute md:bottom-2 text-md text-textGrey">
           Click anywhere to close
         </p>
       </div>
