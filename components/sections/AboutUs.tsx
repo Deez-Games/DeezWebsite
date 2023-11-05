@@ -19,9 +19,7 @@ const AboutUs = () => {
           <div className="flex justify-end">
             <p className="text-lg lg:text-2xl xl:max-w-[65%]">
               We are a group of young people from Gdansk brought together by a
-              passion for creating video games. <br />
-              <br />
-              Some of us met in high school, others friendships date back years.
+              passion for creating video games.
             </p>
           </div>
         </div>

@@ -26,7 +26,7 @@ const OurValues = () => {
         <MotivationCard
           icon={<BsPeople />}
           title="FRIENDSHIP"
-          description="As friends, we know and respect each other well, and we believe that
+          description="As friends, we know and respect each other well. We believe that
             is the foundation of good communication and teamwork."
         />
       </div>
