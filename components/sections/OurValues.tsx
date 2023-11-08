@@ -14,14 +14,13 @@ const OurValues = () => {
         <MotivationCard
           icon={<BsSuitHeartFill />}
           title="PASSION"
-          description="Passion is our biggest motivation and one of the main aspects of
-            meaning in our lives. It brings uniqueness and distinctiveness."
+          description="Passion is our main motivation and the most important aspect of purpose in our lives. It brings uniqueness and distinctiveness."
         />
         <MotivationCard
           icon={<AiOutlineAim />}
           title="DETERMINATION"
-          description="Derived from passion, determination is the key to pushing our limits
-            and achieving great goals."
+          description={`Derived from passion, determination is the key to pushing our limits
+            and achieving great goals.`}
         />
         <MotivationCard
           icon={<BsPeople />}

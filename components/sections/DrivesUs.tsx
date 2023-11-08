@@ -13,13 +13,7 @@ const DrivesUs = () => {
           </h2>
           <br />
           <p className="text-lg lg:text-2xl xl:max-w-[60%]">
-            Our main goal is to make games that are meaningful both to us and
-            the players. <br />
-            <br />
-            Whatever we do, we strive to break the schemes in every aspect of
-            life. <br />
-            <br />
-            We believe that bonds are to be broken.
+          The main reason we decided to start our journey is the desire to create unique games that are both exciting for players and enjoyable for us to create.<br /><br />We deeply believe that the sense of creating is to break the schemes and stay unconventional.
           </p>
         </div>
       </div>

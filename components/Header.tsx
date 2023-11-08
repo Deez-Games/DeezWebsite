@@ -65,7 +65,7 @@ const Header = () => {
         <div className="flex md:hidden justify-between text-3xl">
           <div></div>
           <button onClick={showSideNav}>
-            <RxHamburgerMenu />
+            <RxHamburgerMenu className="text-white" />
           </button>
         </div>
       </div>

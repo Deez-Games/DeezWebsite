@@ -11,15 +11,14 @@ const ContactUs = () => {
         <h4 className="text-2xl lg:text-4xl">WANT TO PARTNER UP?</h4>
         <h3 className="text-4xl lg:text-7xl font-bold">CONTACT US!</h3>
       </div>
-      <div className="bg-brightBg text-black text-lg lg:text-2xl xl:text-3xl text-center p-6 md:p-12 lg:py-12 flex flex-col items-center max-w-[400px] md:max-w-[500px]">
-        <div className="text-left">
-          Business and general inquiries: <br />
-          <span className="text-violet font-bold">
-            contactdeezgames@gmail.com
-          </span>
+      <div className="bg-brightBg text-black text-lg lg:text-2xl xl:text-3xl text-left p-6 md:p-12 lg:py-12 flex flex-col max-w-[400px] md:max-w-[500px]">
+        <div>
+          Business and general inquiries:
+          <br />
+          <span className="text-violet font-bold">contactdeezgames@gmail.com</span>
         </div>
         <br />
-        <div className="text-left">
+        <div>
           Player support, game questions:
           <br />
           <span className="text-violet font-bold">helpdeezgames@gmail.com</span>
