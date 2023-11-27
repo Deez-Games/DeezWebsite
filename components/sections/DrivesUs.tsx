@@ -4,7 +4,7 @@ const DrivesUs = () => {
   return (
     <div
       id="DrivesUs"
-      className="flex flex-col md:flex-row text-brightBg px-4 sm:px-12 2xl:px-32 py-8 sm:py-24 gap-6 customGradientVioletRight shadow-insetBottom"
+      className="flex flex-col bg-center bg-cover bg-fixed md:flex-row text-brightBg px-4 sm:px-12 2xl:px-32 py-8 sm:py-24 gap-6 customGradientVioletRight shadow-insetBottom"
     >
       <div className="flex justify-start items-center">
         <div className="">
