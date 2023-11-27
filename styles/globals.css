@@ -40,7 +40,7 @@ a {
 }
 
 .customGradientVioletRight {
-  background: linear-gradient(135deg, rgba(36,36,49,1) 56%, rgba(71,0,223,1) 56%) url('https://deez-games.github.io/DeezWebsite/WebDesign.png');
+  background: url('https://deez-games.github.io/DeezWebsite/WebDesign.png') center no-repeat fixed, linear-gradient(135deg, rgba(36,36,49,1) 56%, rgba(71,0,223,1) 56%);
 }
 
 .customGradientVioletLeft {
