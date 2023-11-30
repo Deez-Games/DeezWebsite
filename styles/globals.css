@@ -40,12 +40,12 @@ a {
 }
 
 .customGradientVioletRight {
-  background: url('https://deez-games.github.io/DeezWebsite/WebDesign.png') top fixed no-repeat, linear-gradient(135deg, rgba(36,36,49,1) 56%, rgba(71,0,223,1) 56%);
+  background: url('https://deez-games.github.io/DeezWebsite/WebDesign.png') top fixed no-repeat, linear-gradient(135deg, rgba(36,36,49,1) 56%, rgba(102,30,206,1) 56%);
   background-size: cover;
 }
 
 .customGradientVioletLeft {
-  background: url('https://deez-games.github.io/DeezWebsite/WebDesignReversed.png') top fixed no-repeat, linear-gradient(135deg, rgba(71,0,223,1) 44%, rgba(36,36,49,1) 44%);
+  background: url('https://deez-games.github.io/DeezWebsite/WebDesignReversed.png') top fixed no-repeat, linear-gradient(135deg, rgba(102,30,206,1) 44%, rgba(36,36,49,1) 44%);
   background-size: cover;
 }
 
