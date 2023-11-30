@@ -45,8 +45,8 @@ a {
 }
 
 .customGradientVioletLeft {
-  background: rgb(71,0,223);
-  background: linear-gradient(135deg, rgba(71,0,223,1) 44%, rgba(36,36,49,1) 44%);
+  background: url('https://deez-games.github.io/DeezWebsite/WebDesignReversed.png') top fixed no-repeat, linear-gradient(135deg, rgba(71,0,223,1) 44%, rgba(36,36,49,1) 44%);
+  background-size: cover;
 }
 
 /*DARK THEME*/
