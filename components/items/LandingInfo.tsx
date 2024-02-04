@@ -12,11 +12,11 @@ const LandingInfo = () => {
       <h3 className="text-xl lg:text-2xl font-bold">
         on Nintendo Switch!
       </h3>
-      <label className="flex justify-evenly gap-x-10 text-lg self-center">
-        <span className="tracking-wide text-xl underline font-bold tracking-wider">
+      <label className="flex justify-evenly gap-x-10 text-lg">
+        <span className="text-xl underline font-bold tracking-wider">
           <Link href="https://www.nintendo.com/store/products/gauntler-switch/">CHECK OUT</Link>
         </span>
-        <span className="tracking-wide text-xl underline font-bold tracking-wider">
+        <span className="text-xl underline font-bold tracking-wider">
           <Link href="https://www.nintendo.com/store/products/gauntler-switch/">TRAILER</Link>
         </span>
       </label>
