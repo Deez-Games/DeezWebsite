@@ -4,6 +4,8 @@ import games from "../../data/games.json";
 import GamePanel from "../GamePanel";
 import { BsNintendoSwitch, BsSteam, BsTiktok, BsYoutube } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
+import { TIMEOUT } from "dns";
+import { time } from "console";
 
 const GamesTiles = () => {
   const onClose = () => {
@@ -140,8 +142,14 @@ const GamesTiles = () => {
           }}
           onMouseEnter={changeWidth}
           onMouseLeave={restoreWidth}
-          className="babushcats flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
-        ></div>
+          className="babushcats flex justify-center items-center w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/gauntler1.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
+        >
+          <img
+              className="w-11/12 select-none"
+              src="https://deez-games.github.io/DeezWebsite/gauntler-logo.png"
+              alt="Deez Games logo"
+            />
+        </div>
 
         <div
           onClick={() => {
@@ -150,8 +158,19 @@ const GamesTiles = () => {
           }}
           onMouseEnter={changeWidth}
           onMouseLeave={restoreWidth}
-          className="gauntler flex w-1/2 bg-[url('https://deez-games.github.io/DeezWebsite/Banerbbsh3.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
-        ></div>
+          className="gauntler flex flex-col w-1/2 justify-center items-center bg-[url('https://deez-games.github.io/DeezWebsite/babushcatsGameTile.png')] bg-no-repeat bg-center bg-cover duration-500 cursor-pointer"
+        >
+          <img
+              className="w-11/12 select-none"
+              src="https://deez-games.github.io/DeezWebsite/bbsh-text.png"
+              alt="Deez Games logo"
+            />
+            <img
+              className="w-1/2 select-none"
+              src="https://deez-games.github.io/DeezWebsite/bbsh-logo.png"
+              alt="Deez Games logo"
+            />
+        </div>
       </div>
       <GamePanel
         isVisible={showModal}
