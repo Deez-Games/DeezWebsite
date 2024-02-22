@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Landing from "../components/sections/Landing";
 import MainSection from "../components/MainSection";
-import "../styles/globals.css";
 
 export default function Home() {
   return (
