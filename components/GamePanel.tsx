@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import { platform } from "os";
 
 export interface Props {
   isVisible: boolean;
@@ -33,7 +33,7 @@ const GamePanel = ({
           <h2 className="text-4xl">{header}</h2>
           <p className="text-xl">{description}</p>
           <div className="flex gap-5 text-4xl">
-            {platforms.map(({ icon, name, link }) => {
+            {platforms.map(({ platform: { icon, name }, link }) => {
               if (link) {
                 return (
                   <a target="_blank" key={name} href={link}>
@@ -44,8 +44,13 @@ const GamePanel = ({
             })}
           </div>
         </div>
-        <div className='md:w-[60%] h-full'>
-          <iframe className="w-full h-full" src={trailer} title="BABUSHCATS TRAILER" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        <div className="md:w-[60%] h-full">
+          <iframe
+            className="w-full h-full"
+            src={trailer}
+            title="BABUSHCATS TRAILER"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
         </div>
 
         <p className="md:absolute md:bottom-2 text-md text-textGrey">

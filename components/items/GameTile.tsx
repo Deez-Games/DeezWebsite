@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import games from "../../data/games";
 
-const GameTile = ({ setShowModal, setModalGame, name, logo }) => {
+export interface Props {
+  setShowModal: (arg0: boolean) => void;
+  setModalGame: (arg0: any) => void;
+  name: string;
+  logo: React.JSX.Element;
+}
+const GameTile = ({ setShowModal, setModalGame, name, logo }: Props) => {
   return (
     <div
       onClick={() => {

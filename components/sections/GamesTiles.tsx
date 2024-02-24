@@ -68,6 +68,7 @@ const GamesTiles = () => {
           }
         />
       </div>
+
       <GamePanel
         isVisible={showModal}
         closeModal={onClose}

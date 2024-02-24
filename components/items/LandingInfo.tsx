@@ -10,14 +10,18 @@ const LandingInfo = () => {
         </span>
       </div>
       <h3 className="text-xl lg:text-2xl font-bold">
-        on Nintendo Switch!
+        on Steam and Nintendo Switch!
       </h3>
       <label className="flex justify-evenly gap-x-10 text-lg">
         <span className="text-xl underline font-bold tracking-wider">
-          <Link href="https://www.nintendo.com/store/products/gauntler-switch/">CHECK OUT</Link>
+          <Link href="https://www.nintendo.com/store/products/gauntler-switch/">
+            CHECK OUT
+          </Link>
         </span>
         <span className="text-xl underline font-bold tracking-wider">
-          <Link href="https://www.nintendo.com/store/products/gauntler-switch/">TRAILER</Link>
+          <Link href="https://www.nintendo.com/store/products/gauntler-switch/">
+            TRAILER
+          </Link>
         </span>
       </label>
     </div>
