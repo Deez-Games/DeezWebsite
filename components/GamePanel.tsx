@@ -44,7 +44,7 @@ const GamePanel = ({
             })}
           </div>
         </div>
-        <div className="md:w-[60%] h-full">
+        <div className="md:min-w-[60%] h-full">
           <iframe
             className="w-full h-full"
             src={trailer}
