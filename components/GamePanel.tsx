@@ -26,13 +26,13 @@ const GamePanel = ({
       onClick={() => closeModal()}
     >
       <div
-        className="relative w-[90%] md:w-[80%] max-h-screen md:h-[65%] min-h-[475px] flex flex-col lg:flex-row items-center justify-center lg:justify-around gap-8 font-bold bg-darkBg p-4 sm:p-8 rounded"
+        className="relative w-[90%] md:w-[60%] lg:w-[80%] max-h-[800px] lg:max-h-[600px] md:h-[90%] lg:h-[65%] min-h-[475px] flex flex-col lg:flex-row items-center justify-center lg:justify-around gap-4 font-bold bg-darkBg p-4 sm:p-8 rounded"
         onClick={() => {}}
       >
-        <div className="flex flex-col gap-8 text-white">
+        <div className="flex flex-col gap-4 lg:gap-8 text-white lg:w-1/2">
           <h2 className="text-4xl">{header}</h2>
           <p className="text-xl">{description}</p>
-          <div className="flex gap-5 text-4xl">
+          <div className="flex gap-6 text-4xl">
             {platforms.map(({ platform: { icon, name }, link }) => {
               if (link) {
                 return (
@@ -44,9 +44,9 @@ const GamePanel = ({
             })}
           </div>
         </div>
-        <div className="md:w-[60%] h-full">
+        <div className="w-full lg:w-1/2 h-full relative">
           <iframe
-            className="w-full h-full"
+            className="w-full h-full absolute top-0 left-0"
             src={trailer}
             title="BABUSHCATS TRAILER"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
