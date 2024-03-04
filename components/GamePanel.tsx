@@ -44,9 +44,9 @@ const GamePanel = ({
             })}
           </div>
         </div>
-        <div className="w-full lg:w-1/2 h-full relative">
+        <div className="md:min-w-[60%] h-full">
           <iframe
-            className="w-full h-full absolute top-0 left-0"
+            className="w-full h-full"
             src={trailer}
             title="BABUSHCATS TRAILER"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

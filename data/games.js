@@ -53,7 +53,7 @@ const games = {
   babushcats: {
     name: "Babushcats",
     description:
-      "Babushcats puts you in the shoes of a grandma managing a shelter for stray cats! From washing and feeding to grooming and pampering, keep those cats content and entertained amidst the chaos. Get ready for a wild ride of cat antics and endless laughs",
+      "Babushcats puts you in the shoes of a grandma managing a shelter for stray cats! From washing and feeding to grooming and pampering, keep those cats content and entertained amidst the chaos. Get ready for a wild ride of cat antics and endless laughs!",
     trailer: "https://www.youtube.com/embed/VhNXNGHMxrY",
     platforms: [
       {
