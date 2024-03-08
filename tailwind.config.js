@@ -29,8 +29,6 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         gauntler: "url('/gauntler1.png')",
-        gauntlerTile: "url('/gauntlerGameTile.png')",
-        babushcatsTile: "url('/babushcatsGameTile.png')",
       },
       boxShadow: {
         imageShadow: "16px 16px 0px 0px rgb(91, 13, 218)",
