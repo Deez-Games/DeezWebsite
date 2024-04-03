@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import GamePanel from "../GamePanel";
 import GameTile from "../items/GameTile";
+import Image from "next/image";
 
 const GamesTiles = () => {
   const onClose = () => {
@@ -41,9 +42,11 @@ const GamesTiles = () => {
           setShowModal={setShowModal}
           name="gauntler"
           logo={
-            <img
+            <Image
+              width={3248}
+              height={608}
               className="w-11/12 select-none"
-              src="https://deez-games.github.io/DeezWebsite/gauntler-logo.png"
+              src="/gauntler-logo.png"
               alt="Deez Games logo"
             />
           }
@@ -54,14 +57,18 @@ const GamesTiles = () => {
           name="babushcats"
           logo={
             <div className="flex flex-col items-center">
-              <img
+              <Image
+                width={2299}
+                height={457}
                 className="w-full select-none"
-                src="https://deez-games.github.io/DeezWebsite/bbsh-text.png"
+                src="/bbsh-text.png"
                 alt="Deez Games logo"
               />
-              <img
+              <Image
+                width={1731}
+                height={1241}
                 className="w-1/2 select-none"
-                src="https://deez-games.github.io/DeezWebsite/bbsh-logo.png"
+                src="/bbsh-logo.png"
                 alt="Deez Games logo"
               />
             </div>

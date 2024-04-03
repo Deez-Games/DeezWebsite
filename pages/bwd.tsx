@@ -9,7 +9,7 @@ const RedirectPage = () => {
       "https://drive.usercontent.google.com/download?id=1AYbPcRWavxeT2wD2eXzNzgGu2vkAJCAb&export=download&authuser=0";
 
     router.push(redirectLink);
-  }, []);
+  }, [router]);
 
   return (
     <div

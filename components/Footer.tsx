@@ -8,7 +8,7 @@ const Footer = () => {
       <h6 className="text-2xl font-bold">Follow Deez Games on:</h6>
       <div className="flex text-3xl sm:text-4xl justify-between gap-6 sm:gap-16 transit transition-all ease-in-out">
         {Object.values(socials).map(({ link, icon }) => (
-          <SocialIcon link={link} icon={icon} />
+          <SocialIcon key={link} link={link} icon={icon} />
         ))}
       </div>
     </div>

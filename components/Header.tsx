@@ -3,6 +3,7 @@ import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import socials from "../data/socials";
 import SocialIcon from "./items/SocialIcon";
+import Image from "next/image";
 
 const Header = () => {
   const [scrollOnTop, setScrollOnTop] = useState(true);
@@ -32,7 +33,7 @@ const Header = () => {
       <div className="w-[95%] flex justify-between">
         <div className="flex items-center gap-6 text-2xl">
           <Link href="/">
-            <img
+            <Image
               className="cursor-pointer"
               src="/logo.png"
               width={35}
@@ -42,7 +43,7 @@ const Header = () => {
           </Link>
 
           {Object.values(socials).map(({ link, icon }) => (
-            <SocialIcon link={link} icon={icon} />
+            <SocialIcon key={link} link={link} icon={icon} />
           ))}
         </div>
         <div className="hidden md:flex w-1/3 lg:w-1/4 justify-between gap-2">
