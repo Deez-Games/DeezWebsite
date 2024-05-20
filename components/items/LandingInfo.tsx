@@ -6,21 +6,18 @@ const LandingInfo = () => {
     <div className="flex flex-col justify-center items-center h-full gap-4 md:items-start md:justify-end md:max-w-[400px] lg:max-w-[450px] xl:max-w-[500px] text-textBright">
       <div className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col justify-center">
         <span className="uppercase font-bold tracking-wider">
-          GAUNTLER <br /> OUT NOW!
+          DEMO <br /> ON STEAM!
         </span>
       </div>
-      <h3 className="text-xl lg:text-2xl font-bold">
-        on Steam and Nintendo Switch!
-      </h3>
       <label className="flex justify-evenly gap-x-10 text-lg">
         <span className="text-xl underline font-bold tracking-wider">
-          <Link href="https://store.steampowered.com/app/2789380/Gauntler/">
+          <Link href="https://store.steampowered.com/app/2923270/BabushCats/">
             CHECK OUT
           </Link>
         </span>
         <span className="text-xl underline font-bold tracking-wider">
-          <Link href="https://www.nintendo.com/store/products/gauntler-switch/">
-            TRAILER
+          <Link href="https://x.com/BabushCatsGame">
+            BABUSHCATS TWITTER
           </Link>
         </span>
       </label>
