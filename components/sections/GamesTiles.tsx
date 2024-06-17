@@ -42,13 +42,15 @@ const GamesTiles = () => {
           setShowModal={setShowModal}
           name="gauntler"
           logo={
-            <Image
-              width={3248}
-              height={608}
-              className="w-11/12 select-none"
-              src="/gauntler-logo.png"
-              alt="Deez Games logo"
-            />
+            <div className="max-w-2xl">
+              <Image
+                width={3248}
+                height={608}
+                className="w-11/12 select-none"
+                src="/gauntler-logo.png"
+                alt="Deez Games logo"
+              />
+            </div>
           }
         />
         <GameTile
@@ -56,7 +58,7 @@ const GamesTiles = () => {
           setShowModal={setShowModal}
           name="babushcats"
           logo={
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center max-w-2xl">
               <Image
                 width={2299}
                 height={457}
