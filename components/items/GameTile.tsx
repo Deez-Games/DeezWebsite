@@ -14,7 +14,7 @@ const GameTile = ({ setShowModal, setModalGame, name, logo }: Props) => {
         setShowModal(true);
         setModalGame(games[name]);
       }}
-      className={`${name} flex justify-center items-center bg-center bg-cover cursor-pointer w-1/2 hover:w-[120%] duration-500 relative`}
+      className={`flex justify-center items-center bg-center bg-cover cursor-pointer w-1/2 hover:w-[120%] duration-500 relative`}
       style={{
         backgroundImage: `url('${games[name].images.backgroundPath}')`,
       }}

@@ -56,18 +56,18 @@ const GamesTiles = () => {
           setShowModal={setShowModal}
           name="babushcats"
           logo={
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center max-h-[90%]">
               <Image
                 width={2299}
                 height={457}
-                className="w-full select-none"
+                className="object-contain select-none"
                 src="/bbsh-text.png"
                 alt="Deez Games logo"
               />
               <Image
                 width={1731}
                 height={1241}
-                className="w-1/2 select-none"
+                className="object-contain select-none"
                 src="/bbsh-logo.png"
                 alt="Deez Games logo"
               />
