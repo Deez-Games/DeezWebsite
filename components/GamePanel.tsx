@@ -21,11 +21,11 @@ const GamePanel = ({
 }: Props) => {
   const ref = useRef(null);
 
-  if (!isVisible) return null;
-
   useClickAway(ref, () => {
     setShowModal(false);
   });
+
+  if (!isVisible) return null;
 
   return (
     <div
