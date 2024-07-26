@@ -3,9 +3,13 @@ import Link from "next/link";
 
 const LandingInfo = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-full gap-4 md:items-start md:justify-end md:max-w-[400px] lg:max-w-[480px] xl:max-w-[640px] text-textBright">
+    <div className="flex flex-col justify-center items-center h-full gap-4 md:items-start md:justify-end md:max-w-[400px] lg:max-w-[480px] xl:max-w-[640px] text-textBright px-2">
       <div className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col justify-center">
-      <img src="https://deez-games.github.io/DeezWebsite/www_bbsh_text.webp" className="w-96 lg:w-[30rem] xl:w-[40rem]" alt="babushcats" />
+        <img
+          src="https://deez-games.github.io/DeezWebsite/www_bbsh_text.webp"
+          className="w-96 lg:w-[30rem] xl:w-[40rem]"
+          alt="babushcats"
+        />
         <span className="uppercase font-bold tracking-wider">
           DEMO ON STEAM!
         </span>
@@ -17,9 +21,7 @@ const LandingInfo = () => {
           </Link>
         </span>
         <span className="text-xl underline font-bold tracking-wider">
-          <Link href="https://x.com/BabushCatsGame">
-            BABUSHCATS TWITTER
-          </Link>
+          <Link href="https://x.com/BabushCatsGame">BABUSHCATS TWITTER</Link>
         </span>
       </label>
     </div>

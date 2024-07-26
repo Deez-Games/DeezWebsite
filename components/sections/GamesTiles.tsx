@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import GamePanel from "../GamePanel";
 import GameTile from "../items/GameTile";
@@ -85,6 +84,7 @@ const GamesTiles = () => {
         description={modalGame.description}
         platforms={modalGame.platforms}
         trailer={modalGame.trailer}
+        setShowModal={setShowModal}
       />
     </div>
   );
