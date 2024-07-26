@@ -19,9 +19,10 @@ const GamePanel = ({
   trailer,
   setShowModal,
 }: Props) => {
+  const ref = useRef(null);
+
   if (!isVisible) return null;
 
-  const ref = useRef(null);
   useClickAway(ref, () => {
     setShowModal(false);
   });
