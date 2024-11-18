@@ -37,7 +37,7 @@ const games = {
       },
       {
         platform: youtube,
-        link: "https://www.youtube.com/@Deez_Games",
+        link: "https://www.youtube.com/@DeezGamesOfficial",
       },
       {
         platform: tiktok,
@@ -62,7 +62,7 @@ const games = {
       },
       {
         platform: youtube,
-        link: "https://www.youtube.com/@Deez_Games",
+        link: "https://www.youtube.com/@DeezGamesOfficial",
       },
     ],
 
