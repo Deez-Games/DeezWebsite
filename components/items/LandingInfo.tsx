@@ -14,7 +14,7 @@ const LandingInfo = () => {
           alt="babushcats"
         />
         <span className="uppercase font-bold tracking-wider">
-          DEMO ON STEAM!
+          WISHLIST NOW ON STEAM!
         </span>
       </div>
       <label className="flex justify-evenly gap-x-10 text-lg">

@@ -51,10 +51,10 @@ const games = {
     },
   },
   babushcats: {
-    name: "Babushcats",
+    name: "BabushCats",
     description:
-      "Babushcats puts you in the shoes of a grandma managing a shelter for stray cats! From washing and feeding to grooming and pampering, keep those cats content and entertained amidst the chaos. Get ready for a wild ride of cat antics and endless laughs!",
-    trailer: "https://www.youtube.com/embed/VhNXNGHMxrY",
+      "BabushCats is a cozy sim where you play as a grandma running a cat shelter. Care for the cats by day, bond with them, battle their nightmares at night and defeat their biggest fear, BUZZ. Blending Tamagotchi-style pet care with dynamic combat, it offers both relaxing and intense gameplay.",
+    trailer: "https://www.youtube.com/watch?v=YzuWufkHJ5s",
     platforms: [
       {
         platform: twitter,

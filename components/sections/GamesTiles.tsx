@@ -47,7 +47,7 @@ const GamesTiles = () => {
                 height={608}
                 className="w-11/12 select-none"
                 src="/gauntler-logo.png"
-                alt="Deez Games logo"
+                alt="Gauntler logo"
               />
             </div>
           }
@@ -59,18 +59,11 @@ const GamesTiles = () => {
           logo={
             <div className="flex flex-col items-center max-w-[90%]">
               <Image
-                width={2299}
-                height={457}
-                className="object-contain select-none"
-                src="/bbsh-text.png"
-                alt="Deez Games logo"
-              />
-              <Image
                 width={1731}
                 height={1241}
                 className="object-contain select-none"
-                src="/bbsh-logo.png"
-                alt="Deez Games logo"
+                src="/LogoBbshMain.png"
+                alt="BabushCats logo"
               />
             </div>
           }

@@ -7,7 +7,7 @@ const socials = {
     icon: <FaXTwitter />,
   },
   youtube: {
-    link: "https://www.youtube.com/@DeezGuise",
+    link: "https://www.youtube.com/@DEEZERSI",
     icon: <FaYoutube />,
   },
   instagram: {
