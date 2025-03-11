@@ -67,7 +67,7 @@ const games = {
     ],
 
     images: {
-      backgroundPath: "/babushcatsBaner.webp",
+      backgroundPath: "/screen_keyart2.png",
       logo: "",
     },
   },
